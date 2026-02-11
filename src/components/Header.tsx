@@ -15,7 +15,7 @@ export default function Header() {
                   <span className="text-white font-bold text-xl">AFSC</span>
                 </div>
                 <div className="hidden sm:block">
-                  <h1 className="text-lg font-bold text-gray-900">AFSC</h1>
+                  <h1 className="text-lg font-bold text-gray-900">ACCOUNTING & FINANCE SKILL COUNCIL</h1>
                   <p className="text-xs text-gray-600">Under Skill India Mission</p>
                 </div>
               </div>
