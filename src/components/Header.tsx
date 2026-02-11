@@ -12,10 +12,10 @@ export default function Header() {
             <div className="flex-shrink-0">
               <div className="flex items-center gap-2">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-teal-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">AF</span>
+                  <span className="text-white font-bold text-xl">AFSC</span>
                 </div>
                 <div className="hidden sm:block">
-                  <h1 className="text-lg font-bold text-gray-900">A&F Skill Development</h1>
+                  <h1 className="text-lg font-bold text-gray-900">AFSC</h1>
                   <p className="text-xs text-gray-600">Under Skill India Mission</p>
                 </div>
               </div>
