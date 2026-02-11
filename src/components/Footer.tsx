@@ -63,7 +63,9 @@ export default function Footer() {
             <ul className="space-y-3 text-blue-100">
               <li className="flex items-start gap-3">
                 <MapPin className="flex-shrink-0 mt-1" size={18} />
-                <span className="text-sm">Skill India Bhawan, New Delhi - 110001</span>
+                <span className="text-sm">Head Office: Kaushal, 1st Floor, Near Gauri Shankar Mandir, Sector 9A, Gurugram - 122 001
+Regional Office: 3rd Floor, Indira Heights, Old Gangapur Naka, Gangapur Road, Nashik - 422 005
+</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="flex-shrink-0 mt-1" size={18} />
@@ -71,7 +73,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="flex-shrink-0 mt-1" size={18} />
-                <span className="text-sm">info@afskill.gov.in</span>
+                <span className="text-sm">afsc.nashik@gmail.com</span>
               </li>
             </ul>
 
