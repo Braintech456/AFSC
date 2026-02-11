@@ -67,7 +67,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="flex-shrink-0 mt-1" size={18} />
-                <span className="text-sm">1800-XXX-XXXX (Toll Free)</span>
+                <span className="text-sm">+91 93243 52753</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="flex-shrink-0 mt-1" size={18} />
