@@ -8,10 +8,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-teal-400 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">AF</span>
+                <span className="text-white font-bold text-lg">AFSC</span>
               </div>
               <div>
-                <h3 className="font-bold text-lg">A&F Skill Development</h3>
+                <h3 className="font-bold text-lg">AFSC</h3>
                 <p className="text-xs text-blue-200">Under Skill India Mission</p>
               </div>
             </div>
