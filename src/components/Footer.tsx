@@ -88,7 +88,7 @@ Regional Office: 3rd Floor, Indira Heights, Old Gangapur Naka, Gangapur Road, Na
         <div className="border-t border-blue-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-blue-200 text-sm text-center md:text-left">
-              © 2024 Accounting & Finance Skill Development Organization. A Government of India Initiative under Skill India Mission.
+              © 2024 Accounting & Finance Skill Council.
             </p>
             <div className="flex gap-6 text-sm text-blue-200">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
