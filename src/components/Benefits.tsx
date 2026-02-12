@@ -45,15 +45,15 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section id="benefits" className="py-20 bg-white">
+    <section id="benefits" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Membership <span className="text-blue-600">Benefits</span>
+            Why Choose <span className="text-blue-600">AFSC Certification</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Join thousands of certified professionals who have transformed their careers through our comprehensive training and support ecosystem.
+            AFSC certifications are government-recognized, standardized, and trusted across India's accounting and finance sector.
           </p>
         </div>
 
@@ -63,9 +63,9 @@ export default function Benefits() {
             return (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 hover:border-blue-500 hover:shadow-lg transition-all group"
+                className="bg-white border border-gray-300 rounded-xl p-6 hover:border-blue-600 hover:shadow-lg transition-all"
               >
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-teal-500 transition-colors">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                   <Icon className="text-white" size={24} />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{benefit.title}</h3>
@@ -75,13 +75,13 @@ export default function Benefits() {
           })}
         </div>
 
-        <div className="mt-16 bg-gradient-to-br from-blue-600 to-teal-500 rounded-2xl p-8 md:p-12 text-white text-center">
-          <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Career?</h3>
+        <div className="mt-16 bg-blue-600 rounded-xl p-8 md:p-12 text-white text-center">
+          <h3 className="text-3xl font-bold mb-4">Earn Your AFSC Certification</h3>
           <p className="text-blue-50 text-lg mb-8 max-w-2xl mx-auto">
-            Join our community of successful accounting and finance professionals. Start your journey towards a certified and rewarding career today.
+            Get certified from an AFSC-authorized training center. Your credential will be verified, recognized, and valid nationwide.
           </p>
-          <button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-xl">
-            Become a Member Today
+          <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+            Find an Authorized Center
           </button>
         </div>
       </div>

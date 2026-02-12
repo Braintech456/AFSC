@@ -2,9 +2,10 @@ import Header from './components/Header';
 import AffiliationStrip from './components/AffiliationStrip';
 import Hero from './components/Hero';
 import About from './components/About';
-import Courses from './components/Courses';
+import Certifications from './components/Courses';
 import Benefits from './components/Benefits';
-import Chapters from './components/Chapters';
+import AuthorizedCenters from './components/AuthorizedCenters';
+import Verify from './components/Verify';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,10 +14,11 @@ function App() {
       <Header />
       <AffiliationStrip />
       <Hero />
+      <Verify />
       <About />
-      <Courses />
+      <Certifications />
       <Benefits />
-      <Chapters />
+      <AuthorizedCenters />
       <Footer />
     </div>
   );

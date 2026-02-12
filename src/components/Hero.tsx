@@ -1,50 +1,46 @@
-import { ArrowRight, Award, Users, TrendingUp } from 'lucide-react';
+import { Award, Users, TrendingUp } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-600 to-teal-500 text-white">
+    <section className="relative bg-blue-600 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-              <span className="text-sm font-medium">Empowering India's Accounting Professionals</span>
-            </div>
+            <div className="text-sm font-semibold text-blue-100 mb-3 uppercase tracking-wide">Government of India Initiative</div>
 
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Building Excellence in
-              <span className="block text-teal-200">Accounting & Finance</span>
+              National Accounting & Finance Skill Council
             </h1>
 
             <p className="text-lg text-blue-50 mb-8 leading-relaxed">
-              A Government-recognized initiative under Skill India Mission, dedicated to developing world-class accounting and finance professionals through standardized training and certification programs.
+              AFSC is the official skill certification authority for accounting and finance professionals in India, operating under the Skill India Mission with standardized, government-recognized certification programs.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-semibold flex items-center gap-2 transition-colors shadow-lg">
-                Get Started
-                <ArrowRight size={20} />
+              <button className="bg-white text-blue-600 hover:bg-gray-50 px-8 py-3 rounded-lg font-semibold transition-colors">
+                Verify Credentials
               </button>
-              <button className="bg-blue-700/50 backdrop-blur-sm hover:bg-blue-700/70 text-white px-8 py-3 rounded-lg font-semibold border border-white/30 transition-colors">
-                View Courses
+              <button className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold border border-blue-500 transition-colors">
+                View Certifications
               </button>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6">
-              <Award className="text-teal-200 mb-4" size={40} />
-              <h3 className="text-3xl font-bold mb-2">15,000+</h3>
+            <div className="bg-blue-700 border border-blue-500 rounded-xl p-6">
+              <Award className="text-white mb-4" size={40} />
+              <h3 className="text-3xl font-bold mb-2">45K+</h3>
               <p className="text-blue-100">Certified Professionals</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6">
-              <Users className="text-teal-200 mb-4" size={40} />
-              <h3 className="text-3xl font-bold mb-2">200+</h3>
-              <p className="text-blue-100">Training Centers</p>
+            <div className="bg-blue-700 border border-blue-500 rounded-xl p-6">
+              <Users className="text-white mb-4" size={40} />
+              <h3 className="text-3xl font-bold mb-2">150+</h3>
+              <p className="text-blue-100">Authorized Centers</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 col-span-2">
-              <TrendingUp className="text-teal-200 mb-4" size={40} />
-              <h3 className="text-3xl font-bold mb-2">95%</h3>
-              <p className="text-blue-100">Employment Success Rate</p>
+            <div className="bg-blue-700 border border-blue-500 rounded-xl p-6 col-span-2">
+              <TrendingUp className="text-white mb-4" size={40} />
+              <h3 className="text-3xl font-bold mb-2">6</h3>
+              <p className="text-blue-100">Standardized Certifications</p>
             </div>
           </div>
         </div>

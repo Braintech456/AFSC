@@ -25,14 +25,13 @@ export default function Header() {
           <nav className="hidden md:flex space-x-8">
             <a href="#home" className="text-blue-600 hover:text-blue-700 font-medium transition-colors">Home</a>
             <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-            <a href="#courses" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Courses</a>
-            <a href="#benefits" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Benefits</a>
-            <a href="#chapters" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Chapters</a>
+            <a href="#certifications" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Certifications</a>
+            <a href="#authorized-centers" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Authorized Centers</a>
           </nav>
 
           <div className="hidden md:block">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
-              Apply Now
+              Verify
             </button>
           </div>
 
@@ -51,11 +50,10 @@ export default function Header() {
             <nav className="flex flex-col space-y-3">
               <a href="#home" className="text-blue-600 font-medium">Home</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium">About</a>
-              <a href="#courses" className="text-gray-700 hover:text-blue-600 font-medium">Courses</a>
-              <a href="#benefits" className="text-gray-700 hover:text-blue-600 font-medium">Benefits</a>
-              <a href="#chapters" className="text-gray-700 hover:text-blue-600 font-medium">Chapters</a>
+              <a href="#certifications" className="text-gray-700 hover:text-blue-600 font-medium">Certifications</a>
+              <a href="#authorized-centers" className="text-gray-700 hover:text-blue-600 font-medium">Authorized Centers</a>
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium w-full">
-                Apply Now
+                Verify
               </button>
             </nav>
           </div>
