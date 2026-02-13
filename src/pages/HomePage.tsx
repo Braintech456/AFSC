@@ -1,10 +1,7 @@
 export default function HomePage() {
   return (
     <div>
-      {/* <AffiliationStrip /> */}
-      <Hero />
-      {/* <About /> */}
-      {/* <Benefits /> */}
+      <About />
     </div>
   );
 }
