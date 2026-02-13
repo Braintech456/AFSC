@@ -27,7 +27,7 @@ export default function Header() {
                     ACCOUNTING & FINANCE SKILL COUNCIL
                   </h1>
                   <p className="text-xs text-gray-600">
-                    Under Skill India Mission
+                    Skill India Mission
                   </p>
                 </div>
               </div>
