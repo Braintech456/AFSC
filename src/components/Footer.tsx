@@ -1,10 +1,13 @@
-import Mail from 'lucide-react/dist/esm/icons/mail';
-import Phone from 'lucide-react/dist/esm/icons/phone';
-import MapPin from 'lucide-react/dist/esm/icons/map-pin';
-import Facebook from 'lucide-react/dist/esm/icons/facebook';
-import Twitter from 'lucide-react/dist/esm/icons/twitter';
-import Linkedin from 'lucide-react/dist/esm/icons/linkedin';
-import Youtube from 'lucide-react/dist/esm/icons/youtube';
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Youtube,
+} from 'lucide-react';
+
 
 export default function Footer() {
   return (
