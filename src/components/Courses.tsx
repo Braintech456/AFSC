@@ -1,13 +1,16 @@
 import { useState } from 'react';
 
-import Clock from 'lucide-react/dist/esm/icons/clock';
-import Award from 'lucide-react/dist/esm/icons/award';
-import Calculator from 'lucide-react/dist/esm/icons/calculator';
-import FileText from 'lucide-react/dist/esm/icons/file-text';
-import BarChart3 from 'lucide-react/dist/esm/icons/bar-chart-3';
-import Shield from 'lucide-react/dist/esm/icons/shield';
-import TrendingUp from 'lucide-react/dist/esm/icons/trending-up';
-import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import {
+  Clock,
+  Award,
+  Calculator,
+  FileText,
+  BarChart3,
+  Shield,
+  TrendingUp,
+  BookOpen,
+} from 'lucide-react';
+
 
 
 const certifications = [
