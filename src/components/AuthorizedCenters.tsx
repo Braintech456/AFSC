@@ -1,19 +1,26 @@
-import { Building2, MapPin, Shield, Zap } from 'lucide-react';
+import Building2 from 'lucide-react/dist/esm/icons/building-2';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
+import Shield from 'lucide-react/dist/esm/icons/shield';
+import Zap from 'lucide-react/dist/esm/icons/zap';
 
 export default function AuthorizedCenters() {
   return (
     <section id="authorized-centers" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             AFSC <span className="text-blue-600">Authorized Centers</span>
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Authorized Centers are vetted training institutions recognized by AFSC to deliver standardized certification programs with consistent quality and regulatory compliance.
+            Authorized Centers are vetted training institutions recognized by
+            AFSC to deliver standardized certification programs with consistent
+            quality and regulatory compliance.
           </p>
         </div>
 
+        {/* Info cards */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="bg-white border border-gray-300 rounded-xl p-8">
             <div className="flex items-start gap-4 mb-6">
@@ -21,7 +28,9 @@ export default function AuthorizedCenters() {
                 <Building2 className="text-white" size={28} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">National Coverage</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  National Coverage
+                </h3>
                 <p className="text-gray-600">Operating across major regions</p>
               </div>
             </div>
@@ -33,44 +42,55 @@ export default function AuthorizedCenters() {
               </div>
               <div className="flex items-start gap-3">
                 <Shield className="text-blue-600 flex-shrink-0 mt-1" size={18} />
-                <span>All centers comply with AFSC quality standards and regulatory requirements</span>
+                <span>
+                  All centers comply with AFSC quality standards and regulatory
+                  requirements
+                </span>
               </div>
               <div className="flex items-start gap-3">
                 <Zap className="text-blue-600 flex-shrink-0 mt-1" size={18} />
-                <span>Regularly audited and monitored for certification validity</span>
+                <span>
+                  Regularly audited and monitored for certification validity
+                </span>
               </div>
             </div>
           </div>
 
+          {/* Requirements */}
           <div className="bg-white border border-gray-300 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Authorized Center Requirements</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Authorized Center Requirements
+            </h3>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Certified trainers with relevant industry credentials</span>
+                <span>Certified trainers with industry credentials</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Standardized learning infrastructure and facilities</span>
+                <span>Standardized learning infrastructure</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Compliance with AFSC curriculum and assessment standards</span>
+                <span>Compliance with AFSC curriculum standards</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Transparent candidate registration and reporting</span>
+                <span>Transparent candidate reporting</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Regular performance evaluations and audits</span>
+                <span>Regular audits and evaluations</span>
               </li>
             </ul>
           </div>
         </div>
 
+        {/* Stats */}
         <div className="bg-white border border-gray-300 rounded-xl p-8 mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">Authorized Center Status</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            Authorized Center Status
+          </h3>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="text-4xl font-bold text-blue-600 mb-2">150+</div>
@@ -78,7 +98,7 @@ export default function AuthorizedCenters() {
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="text-4xl font-bold text-blue-600 mb-2">28</div>
-              <p className="text-gray-600">States & Union Territories</p>
+              <p className="text-gray-600">States & UTs</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="text-4xl font-bold text-blue-600 mb-2">45K+</div>
@@ -87,32 +107,16 @@ export default function AuthorizedCenters() {
           </div>
         </div>
 
+        {/* CTA */}
         <div className="bg-white border border-gray-300 rounded-xl p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">Become an Authorized Center</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            Become an Authorized Center
+          </h3>
           <p className="text-gray-700 mb-6">
-            AFSC invites qualified training institutions to apply for authorization. Partner with us to deliver standardized certification programs and contribute to India's accounting and finance skill development mission.
+            AFSC invites qualified training institutions to apply for
+            authorization and partner with us in strengthening India’s
+            accounting and finance skill ecosystem.
           </p>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="font-semibold text-gray-900 mb-3">Application Requirements</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>Registered training organization with valid credentials</li>
-                <li>Qualified faculty with industry experience</li>
-                <li>Adequate infrastructure and facilities</li>
-                <li>Quality assurance systems in place</li>
-              </ul>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="font-semibold text-gray-900 mb-3">Benefits of Authorization</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>Deliver government-recognized certifications</li>
-                <li>Access to AFSC support and resources</li>
-                <li>Marketing and brand recognition</li>
-                <li>Regular training for faculty</li>
-              </ul>
-            </div>
-          </div>
 
           <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors">
             Apply to Become an Authorized Center
