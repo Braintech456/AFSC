@@ -1,4 +1,4 @@
-import { Eye, Target, Lightbulb } from 'lucide-react';
+//import { Eye, Target, Lightbulb } from 'lucide-react';
 
 export default function About() {
   return (
