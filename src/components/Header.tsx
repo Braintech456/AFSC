@@ -1,17 +1,23 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path: string) => {
+    return location.pathname === path ? 'text-blue-600' : 'text-gray-700';
+  };
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
+            <Link to="/" className="flex-shrink-0">
               <div className="flex items-center gap-2">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-teal-500 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-xl">AFSC</span>
                 </div>
                 <div className="hidden sm:block">
@@ -19,20 +25,21 @@ export default function Header() {
                   <p className="text-xs text-gray-600">Under Skill India Mission</p>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-blue-600 hover:text-blue-700 font-medium transition-colors">Home</a>
-            <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-            <a href="#certifications" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Certifications</a>
-            <a href="#authorized-centers" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Authorized Centers</a>
+            <Link to="/" className={`${isActive('/')} hover:text-blue-700 font-medium transition-colors`}>Home</Link>
+            <Link to="/certifications" className={`${isActive('/certifications')} hover:text-blue-600 font-medium transition-colors`}>Certifications</Link>
+            <Link to="/authorized-centers" className={`${isActive('/authorized-centers')} hover:text-blue-600 font-medium transition-colors`}>Authorized Centers</Link>
           </nav>
 
           <div className="hidden md:block">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
-              Verify
-            </button>
+            <Link to="/verify">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                Verify
+              </button>
+            </Link>
           </div>
 
           <div className="md:hidden">
@@ -48,13 +55,14 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden pb-4">
             <nav className="flex flex-col space-y-3">
-              <a href="#home" className="text-blue-600 font-medium">Home</a>
-              <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium">About</a>
-              <a href="#certifications" className="text-gray-700 hover:text-blue-600 font-medium">Certifications</a>
-              <a href="#authorized-centers" className="text-gray-700 hover:text-blue-600 font-medium">Authorized Centers</a>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium w-full">
-                Verify
-              </button>
+              <Link to="/" className={`${isActive('/')} font-medium`}>Home</Link>
+              <Link to="/certifications" className={`${isActive('/certifications')} hover:text-blue-600 font-medium`}>Certifications</Link>
+              <Link to="/authorized-centers" className={`${isActive('/authorized-centers')} hover:text-blue-600 font-medium`}>Authorized Centers</Link>
+              <Link to="/verify" className="w-full">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium w-full">
+                  Verify
+                </button>
+              </Link>
             </nav>
           </div>
         )}
