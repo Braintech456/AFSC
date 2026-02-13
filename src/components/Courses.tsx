@@ -9,6 +9,7 @@ import Shield from 'lucide-react/dist/esm/icons/shield';
 import TrendingUp from 'lucide-react/dist/esm/icons/trending-up';
 import BookOpen from 'lucide-react/dist/esm/icons/book-open';
 
+
 const certifications = [
   {
     icon: Calculator,
