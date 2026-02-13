@@ -12,7 +12,7 @@ export default function CertificationsPage() {
   return (
     <div className="min-h-screen text-black p-4">
 
-
+    <main className="bg-slate-50 min-h-screen">
       <AffiliationStrip />
       <Courses />
     </div>
