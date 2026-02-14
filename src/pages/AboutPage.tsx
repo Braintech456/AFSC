@@ -3,11 +3,7 @@ import { Eye, Target, Lightbulb } from 'lucide-react';
 
 export default function AboutPage() {
   return (
-    <>
-      <PageHeader
-        title="About AFSC"
-        subtitle="Accounting & Finance Skill Council of India"
-      />
+    
 
       <main className="bg-slate-50 min-h-screen">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
