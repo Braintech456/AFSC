@@ -1,0 +1,17 @@
+import PageHeader from '../components/PageHeader';
+import About from '../components/About';
+
+export default function AboutPage() {
+  return (
+    <>
+      <PageHeader
+        title="About AFSC"
+        subtitle="Accounting & Finance Skill Council of India"
+      />
+
+      <main className="bg-slate-50 min-h-screen">
+        <About />
+      </main>
+    </>
+  );
+}
