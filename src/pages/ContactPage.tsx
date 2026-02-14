@@ -54,7 +54,7 @@ Regional Office: Nashik, Maharashtra
 <Mail className="text-blue-600 mt-1" size={24} />
 <div>
 <p className="font-semibold text-gray-900">Email</p>
-<p className="text-gray-700">afsc.nashik@gmail.com</p>
+<p className="text-gray-700">afsc.india@zohomail.in</p>
 </div>
 </div>
 
