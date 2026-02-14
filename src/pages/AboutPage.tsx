@@ -1,64 +1,104 @@
-import { Eye, Target, Lightbulb } from 'lucide-react';
+import { Eye, Target, Lightbulb, ShieldCheck, Users, Settings } from 'lucide-react';
+import AffiliationStrip from '../components/AffiliationStrip';
 
 export default function AboutPage() {
   return (
     <main className="bg-slate-50 min-h-screen">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-        {/* Page Title – simple, no hero */}
-        <div className="mb-10">
-          <h1 className="text-3xl font-semibold text-gray-900">
-            About AFSC
-          </h1>
-          <p className="text-gray-600 mt-2 max-w-3xl">
-            Accounting & Finance Skill Council of India
-          </p>
-        </div>
+      {/* Affiliation Strip (same as Home) */}
+      <AffiliationStrip />
 
-        {/* Intro */}
-        <section className="mb-14">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+        {/* Intro Section */}
+        <section className="mb-16">
           <p className="text-gray-700 text-lg leading-relaxed max-w-4xl">
-            The Accounting & Finance Skill Council (AFSC) works to strengthen
-            India’s accounting and finance ecosystem by defining clear standards
-            for training, assessment, and certification. Operating under the
-            Skill India Mission, AFSC focuses on aligning education with real
-            industry requirements and workforce needs.
+            The Accounting & Finance Skill Council (AFSC) is a sector-focused
+            organization working towards strengthening India’s accounting and
+            finance skill ecosystem. Operating under the Skill India Mission,
+            AFSC develops standardized frameworks for training, assessment, and
+            certification to ensure industry relevance and national consistency.
           </p>
         </section>
 
         {/* Vision & Mission */}
         <section className="grid md:grid-cols-2 gap-10 mb-16">
-          <div className="bg-white rounded-xl border border-gray-200 p-8">
+          <div className="bg-white border border-gray-200 rounded-xl p-8">
             <div className="flex items-center gap-3 mb-4">
               <Eye className="text-blue-600" size={22} />
-              <h3 className="text-lg font-semibold text-gray-900">
-                Vision
-              </h3>
+              <h3 className="text-lg font-semibold text-gray-900">Vision</h3>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              To build a skilled and credible accounting and finance workforce
-              that supports India’s economic growth and meets global professional
-              standards.
+              To build a credible and skilled accounting and finance workforce
+              that supports India’s economic growth and aligns with global
+              professional standards.
             </p>
           </div>
 
-          <div className="bg-white rounded-xl border border-gray-200 p-8">
+          <div className="bg-white border border-gray-200 rounded-xl p-8">
             <div className="flex items-center gap-3 mb-4">
               <Target className="text-blue-600" size={22} />
-              <h3 className="text-lg font-semibold text-gray-900">
-                Mission
-              </h3>
+              <h3 className="text-lg font-semibold text-gray-900">Mission</h3>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              To implement transparent, industry-aligned certification frameworks
-              through authorized training centers, ensuring consistent quality
-              and measurable outcomes.
+              To implement transparent, industry-aligned certification and
+              training systems through authorized institutions, ensuring quality,
+              consistency, and measurable outcomes.
+            </p>
+          </div>
+        </section>
+
+        {/* Role & Mandate */}
+        <section className="mb-16">
+          <h3 className="text-xl font-semibold text-gray-900 mb-6">
+            Role & Mandate
+          </h3>
+          <ul className="space-y-3 text-gray-700">
+            <li>— Define occupational standards for accounting and finance roles</li>
+            <li>— Develop structured curricula aligned with industry needs</li>
+            <li>— Establish assessment and certification frameworks</li>
+            <li>— Ensure nationwide uniformity in skill standards</li>
+          </ul>
+        </section>
+
+        {/* How AFSC Works */}
+        <section className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="bg-white border border-gray-200 rounded-xl p-8">
+            <div className="flex items-center gap-3 mb-4">
+              <Settings className="text-blue-600" size={22} />
+              <h4 className="font-semibold text-gray-900">Standardization</h4>
+            </div>
+            <p className="text-gray-700">
+              AFSC designs standardized frameworks for training and assessment,
+              ensuring consistency across regions and institutions.
+            </p>
+          </div>
+
+          <div className="bg-white border border-gray-200 rounded-xl p-8">
+            <div className="flex items-center gap-3 mb-4">
+              <ShieldCheck className="text-blue-600" size={22} />
+              <h4 className="font-semibold text-gray-900">Quality Assurance</h4>
+            </div>
+            <p className="text-gray-700">
+              Authorized centers are monitored and evaluated regularly to
+              maintain quality, credibility, and compliance.
+            </p>
+          </div>
+
+          <div className="bg-white border border-gray-200 rounded-xl p-8">
+            <div className="flex items-center gap-3 mb-4">
+              <Users className="text-blue-600" size={22} />
+              <h4 className="font-semibold text-gray-900">Ecosystem Support</h4>
+            </div>
+            <p className="text-gray-700">
+              AFSC collaborates with institutions, trainers, and employers to
+              bridge the gap between education and employment.
             </p>
           </div>
         </section>
 
         {/* Core Objectives */}
-        <section className="bg-white rounded-xl border border-gray-200 p-10">
+        <section className="bg-white border border-gray-200 rounded-xl p-10">
           <div className="flex items-center gap-3 mb-6">
             <Lightbulb className="text-blue-600" size={22} />
             <h3 className="text-lg font-semibold text-gray-900">
@@ -67,22 +107,10 @@ export default function AboutPage() {
           </div>
 
           <ul className="grid sm:grid-cols-2 gap-4 text-gray-700">
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 mt-1">—</span>
-              Establish standardized curriculum and assessment models
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 mt-1">—</span>
-              Regulate and monitor authorized training centers
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 mt-1">—</span>
-              Issue and verify government-recognized certifications
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 mt-1">—</span>
-              Promote transparency, quality, and trust across the ecosystem
-            </li>
+            <li>— Standardize curriculum and assessments nationwide</li>
+            <li>— Regulate and audit authorized training centers</li>
+            <li>— Issue verifiable, government-recognized certifications</li>
+            <li>— Promote transparency and trust across the skill ecosystem</li>
           </ul>
         </section>
 
