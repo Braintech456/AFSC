@@ -42,10 +42,9 @@ professionals who contribute to the nation's economic growth.
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Mission</h3>
             <p className="text-gray-700 leading-relaxed">
-              To develop and maintain standardized certification programs in
-              accounting and finance, regulate authorized training centers, and
-              ensure government-recognized credentials for professionals across
-              India.
+              To deliver world-class, industry-relevant training in accounting and finance through
+standardized curriculum, cutting-edge technology, and a network of certified training
+centers across India, ensuring skill development reaches every corner of the nation.
             </p>
           </div>
 
