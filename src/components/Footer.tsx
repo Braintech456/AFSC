@@ -3,115 +3,132 @@ import {
   Phone,
   MapPin,
   Facebook,
-  Twitter,
   Linkedin,
   Youtube,
 } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-blue-900 to-blue-800 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    <footer className="bg-slate-900 text-slate-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+        {/* Top Grid */}
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-teal-400 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">AFSC</span>
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="https://i.ibb.co/BV54hDTb/afsc-logo.png"
+                alt="AFSC Logo"
+                className="h-10 w-auto"
+              />
               <div>
-                <h3 className="font-bold text-lg">AFSC</h3>
-                <p className="text-xs text-blue-200">Under Skill India Mission</p>
+                <h3 className="text-white font-semibold text-lg">
+                  Accounting & Finance Skill Council
+                </h3>
+                <p className="text-sm text-slate-400">
+                  Under Skill India Mission
+                </p>
               </div>
             </div>
-            <p className="text-blue-100 text-sm mb-4">
-              Empowering India’s youth with world-class accounting and finance
-              skills, recognized by the Government of India.
+
+            <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
+              AFSC is a sector-focused skill council working towards standardizing
+              accounting and finance education, assessment, and certification
+              across India.
             </p>
-            <div className="flex gap-3">
-              <a className="w-9 h-9 bg-blue-700 hover:bg-blue-600 rounded-lg flex items-center justify-center">
+
+            <div className="flex gap-4 mt-5">
+              <a className="hover:text-white">
                 <Facebook size={18} />
               </a>
-              <a className="w-9 h-9 bg-blue-700 hover:bg-blue-600 rounded-lg flex items-center justify-center">
-                <Twitter size={18} />
-              </a>
-              <a className="w-9 h-9 bg-blue-700 hover:bg-blue-600 rounded-lg flex items-center justify-center">
+              <a className="hover:text-white">
                 <Linkedin size={18} />
               </a>
-              <a className="w-9 h-9 bg-blue-700 hover:bg-blue-600 rounded-lg flex items-center justify-center">
+              <a className="hover:text-white">
                 <Youtube size={18} />
               </a>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-blue-100">
-              <li><a href="#about" className="hover:text-white">About Us</a></li>
-              <li><a href="#certifications" className="hover:text-white">Certifications</a></li>
-              <li><a href="#benefits" className="hover:text-white">Membership</a></li>
-              <li><a href="#chapters" className="hover:text-white">Training Centers</a></li>
-              <li><a href="#verify" className="hover:text-white">Verify Certificate</a></li>
-              <li><a href="#" className="hover:text-white">Careers</a></li>
+            <h4 className="text-white font-semibold mb-4">
+              Navigation
+            </h4>
+            <ul className="space-y-2 text-sm text-slate-400">
+              <li><Link to="/" className="hover:text-white">Home</Link></li>
+              <li><Link to="/about" className="hover:text-white">About AFSC</Link></li>
+              <li><Link to="/certifications" className="hover:text-white">Certifications</Link></li>
+              <li><Link to="/authorized-centers" className="hover:text-white">Authorized Centers</Link></li>
+              <li><Link to="/verify" className="hover:text-white">Verify Certificate</Link></li>
+              <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
             </ul>
           </div>
 
           {/* Resources */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Resources</h4>
-            <ul className="space-y-2 text-blue-100">
-              <li><a href="#" className="hover:text-white">Student Portal</a></li>
-              <li><a href="#" className="hover:text-white">Download Syllabus</a></li>
-              <li><a href="#" className="hover:text-white">FAQs</a></li>
-              <li><a href="#" className="hover:text-white">Blog</a></li>
-              <li><a href="#" className="hover:text-white">Contact Support</a></li>
+            <h4 className="text-white font-semibold mb-4">
+              Resources
+            </h4>
+            <ul className="space-y-2 text-sm text-slate-400">
+              <li>FAQs</li>
+              <li>Certification Guidelines</li>
+              <li>Authorized Center Process</li>
+              <li>Student Information</li>
+              <li>Grievance & Support</li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Contact Us</h4>
-            <ul className="space-y-3 text-blue-100">
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="mt-1 flex-shrink-0" />
-                <span className="text-sm">
+            <h4 className="text-white font-semibold mb-4">
+              Contact Information
+            </h4>
+
+            <ul className="space-y-3 text-sm text-slate-400">
+              <li className="flex gap-3">
+                <MapPin size={16} className="mt-1" />
+                <span>
                   Head Office: Gurugram, Haryana<br />
                   Regional Office: Nashik, Maharashtra
                 </span>
               </li>
-              <li className="flex items-start gap-3">
-                <Phone size={18} className="mt-1 flex-shrink-0" />
-                <span className="text-sm">+91 93243 52753</span>
+
+              <li className="flex gap-3">
+                <Phone size={16} className="mt-1" />
+                <span>+91 93243 52753</span>
               </li>
-              <li className="flex items-start gap-3">
-                <Mail size={18} className="mt-1 flex-shrink-0" />
-                <span className="text-sm">afsc.india@zohomail.in</span>
+
+              <li className="flex gap-3">
+                <Mail size={16} className="mt-1" />
+                <span>afsc.india@zohomail.in</span>
               </li>
             </ul>
 
-            <div className="mt-6">
-              <h5 className="font-semibold mb-2">Office Hours</h5>
-              <p className="text-blue-100 text-sm">Mon–Fri: 9:00 AM – 6:00 PM</p>
-              <p className="text-blue-100 text-sm">Sat: 9:00 AM – 2:00 PM</p>
+            <div className="mt-5 text-sm text-slate-400">
+              <p className="font-medium text-slate-300 mb-1">Office Hours</p>
+              <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
+              <p>Sat: 9:00 AM – 2:00 PM</p>
             </div>
           </div>
         </div>
 
-        {/* Bottom */}
-        <div className="border-t border-blue-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-blue-200 text-sm">
-              © 2024 Accounting & Finance Skill Council.
-            </p>
-            <div className="flex gap-6 text-sm text-blue-200">
-              <a className="hover:text-white">Privacy Policy</a>
-              <a className="hover:text-white">Terms of Service</a>
-              <a className="hover:text-white">Disclaimer</a>
-            </div>
+        {/* Bottom Bar */}
+        <div className="border-t border-slate-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
+          <p>
+            © {new Date().getFullYear()} Accounting & Finance Skill Council. All rights reserved.
+          </p>
+
+          <div className="flex gap-6">
+            <span className="hover:text-white cursor-pointer">Privacy Policy</span>
+            <span className="hover:text-white cursor-pointer">Terms of Use</span>
+            <span className="hover:text-white cursor-pointer">Disclaimer</span>
           </div>
         </div>
+
       </div>
     </footer>
   );
