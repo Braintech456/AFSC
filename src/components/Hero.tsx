@@ -10,11 +10,11 @@ export default function Hero() {
           {/* Left content */}
           <div>
             <div className="text-sm font-semibold text-blue-100 mb-3 uppercase tracking-wide">
-              Government of India Initiative
+              Skill India Mission
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              National Accounting & Finance Skill Council
+               Accounting & Finance Skill Council
             </h1>
 
             <p className="text-lg text-blue-50 mb-8 leading-relaxed">
