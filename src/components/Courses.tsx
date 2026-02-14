@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import Link from 'next/link'; // Assuming Next.js; adjust for other routers
 import {
   Clock,
   Award,
@@ -10,8 +10,6 @@ import {
   TrendingUp,
   BookOpen,
 } from 'lucide-react';
-
-
 
 const certifications = [
   {
@@ -71,17 +69,15 @@ const certifications = [
 ];
 
 export default function Certifications() {
-  const [selectedCert, setSelectedCert] = useState<number | null>(null);
-
   return (
-    <section id="certifications" className="py-20 bg-white">
+    <section id="certifications" className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             AFSC <span className="text-blue-600">Certifications</span>
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-700 mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Standardized certification programs recognized by the Government of India,
             offered exclusively through authorized AFSC training centers.
@@ -95,40 +91,40 @@ export default function Certifications() {
             return (
               <div
                 key={index}
-                className="bg-white border border-gray-300 rounded-xl p-6 hover:border-blue-600 hover:shadow-lg transition-all"
+                className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2"
               >
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                  <Icon className="text-white" size={24} />
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mb-6">
+                  <Icon className="text-white" size={32} />
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {cert.title}
                 </h3>
 
-                <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
-                  <div className="flex items-center gap-1">
-                    <Clock size={16} className="text-blue-600" />
+                <div className="flex items-center gap-4 text-sm text-gray-600 mb-6">
+                  <div className="flex items-center gap-2">
+                    <Clock size={18} className="text-blue-600" />
                     <span>{cert.duration}</span>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Award size={16} className="text-blue-600" />
+                  <div className="flex items-center gap-2">
+                    <Award size={18} className="text-blue-600" />
                     <span>{cert.level}</span>
                   </div>
                 </div>
 
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed">
                   {cert.description}
                 </p>
 
-                <div className="border-t border-gray-200 pt-4">
-                  <p className="text-sm font-semibold text-gray-900 mb-2">
+                <div className="border-t border-gray-200 pt-6">
+                  <p className="text-sm font-semibold text-gray-900 mb-4">
                     Key Modules:
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {cert.topics.map((topic, i) => (
                       <span
                         key={i}
-                        className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full"
+                        className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
                       >
                         {topic}
                       </span>
@@ -136,48 +132,15 @@ export default function Certifications() {
                   </div>
                 </div>
 
-                <button
-                  onClick={() => setSelectedCert(index)}
-                  className="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition-colors"
-                >
-                  View Certification Details
-                </button>
+                <Link href={`/certifications/${index}`}>
+                  <button className="mt-6 w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
+                    View Certification Details
+                  </button>
+                </Link>
               </div>
             );
           })}
         </div>
-
-        {/* Modal */}
-        {selectedCert !== null && (
-          <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-            <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-              <div className="p-8">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    {certifications[selectedCert].title}
-                  </h3>
-                  <button
-                    onClick={() => setSelectedCert(null)}
-                    className="text-gray-500 hover:text-gray-700 text-2xl"
-                  >
-                    ×
-                  </button>
-                </div>
-
-                <p className="text-gray-600 mb-6">
-                  {certifications[selectedCert].description}
-                </p>
-
-                <button
-                  onClick={() => setSelectedCert(null)}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors"
-                >
-                  Apply for Certification
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );
