@@ -1,9 +1,22 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom'; // Assuming react-router-dom
 import { Clock, Award, ArrowLeft } from 'lucide-react';
-import { certifications } from '../data/certifications'; // Adjust path if needed
+
+// Define certifications here (same as in Courses component; consider moving to a shared file)
+const certifications = [
+  {
+    icon: require('lucide-react').Calculator, // Or import dynamically if needed
+    title: 'Tally Prime Professional',
+    duration: '3 Months',
+    level: 'Beginner to Advanced',
+    description:
+      'Master Tally Prime with GST, TDS, and advanced accounting features. Industry-recognized certification included.',
+    topics: ['GST Compliance', 'Inventory Management', 'Payroll Processing', 'Financial Reports'],
+  },
+  // ... (include all certifications from the original array)
+];
 
 export default function CertificationDetailsPage() {
-  const { id } = useParams();
+  const { id } = useParams(); // Get ID from URL
   const navigate = useNavigate();
 
   if (!id || isNaN(Number(id))) {
@@ -23,7 +36,7 @@ export default function CertificationDetailsPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Back Button */}
         <button
-          onClick={() => navigate('/certifications')} // Adjust to your certifications page route
+          onClick={() => navigate('/certifications')} // Adjust path to your certifications page
           className="flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-8 transition-colors"
         >
           <ArrowLeft size={20} />
