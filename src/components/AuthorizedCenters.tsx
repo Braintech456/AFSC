@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Building2 from 'lucide-react/dist/esm/icons/building-2';
 import MapPin from 'lucide-react/dist/esm/icons/map-pin';
 import Shield from 'lucide-react/dist/esm/icons/shield';
@@ -9,118 +10,64 @@ export default function AuthorizedCenters() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold mb-4">
             AFSC <span className="text-blue-600">Authorized Centers</span>
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Authorized Centers are vetted training institutions recognized by
-            AFSC to deliver standardized certification programs with consistent
-            quality and regulatory compliance.
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            Authorized training institutions delivering AFSC certifications
+            with standardized quality and compliance.
           </p>
         </div>
 
-        {/* Info cards */}
+        {/* Info Cards */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-white border border-gray-300 rounded-xl p-8">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Building2 className="text-white" size={28} />
+          <div className="bg-white border rounded-xl p-8">
+            <div className="flex gap-4 mb-6">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                <Building2 className="text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  National Coverage
-                </h3>
-                <p className="text-gray-600">Operating across major regions</p>
+                <h3 className="text-2xl font-bold">National Coverage</h3>
+                <p className="text-gray-600">Across India</p>
               </div>
             </div>
 
-            <div className="space-y-4 text-gray-700">
-              <div className="flex items-start gap-3">
-                <MapPin className="text-blue-600 flex-shrink-0 mt-1" size={18} />
-                <span>150+ authorized training centers across India</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <Shield className="text-blue-600 flex-shrink-0 mt-1" size={18} />
-                <span>
-                  All centers comply with AFSC quality standards and regulatory
-                  requirements
-                </span>
-              </div>
-              <div className="flex items-start gap-3">
-                <Zap className="text-blue-600 flex-shrink-0 mt-1" size={18} />
-                <span>
-                  Regularly audited and monitored for certification validity
-                </span>
-              </div>
+            <div className="space-y-3">
+              <p className="flex gap-2"><MapPin className="text-blue-600" />150+ centers</p>
+              <p className="flex gap-2"><Shield className="text-blue-600" />Quality compliance</p>
+              <p className="flex gap-2"><Zap className="text-blue-600" />Regular audits</p>
             </div>
           </div>
 
-          {/* Requirements */}
-          <div className="bg-white border border-gray-300 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-white border rounded-xl p-8">
+            <h3 className="text-2xl font-bold mb-6">
               Authorized Center Requirements
             </h3>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Certified trainers with industry credentials</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Standardized learning infrastructure</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Compliance with AFSC curriculum standards</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Transparent candidate reporting</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-1">•</span>
-                <span>Regular audits and evaluations</span>
-              </li>
+            <ul className="space-y-3">
+              <li>• Certified trainers</li>
+              <li>• Standard infrastructure</li>
+              <li>• Curriculum compliance</li>
+              <li>• Transparent reporting</li>
+              <li>• Regular evaluations</li>
             </ul>
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="bg-white border border-gray-300 rounded-xl p-8 mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">
-            Authorized Center Status
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6 text-center">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">150+</div>
-              <p className="text-gray-600">Active Authorized Centers</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">28</div>
-              <p className="text-gray-600">States & UTs</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">45K+</div>
-              <p className="text-gray-600">Certified Professionals</p>
-            </div>
-          </div>
-        </div>
-
         {/* CTA */}
-        <div className="bg-white border border-gray-300 rounded-xl p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">
+        <div className="bg-white border rounded-xl p-8">
+          <h3 className="text-2xl font-bold mb-4">
             Become an Authorized Center
           </h3>
-          <p className="text-gray-700 mb-6">
-            AFSC invites qualified training institutions to apply for
-            authorization and partner with us in strengthening India’s
-            accounting and finance skill ecosystem.
+          <p className="mb-6">
+            Partner with AFSC to strengthen India’s accounting & finance skill ecosystem.
           </p>
 
-          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors">
-            Apply to Become an Authorized Center
-          </button>
+          <Link to="/contact#message">
+            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold">
+              Apply to Become an Authorized Center
+            </button>
+          </Link>
         </div>
       </div>
     </section>
