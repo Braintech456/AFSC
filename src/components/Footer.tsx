@@ -92,8 +92,8 @@ export default function Footer() {
               <li className="flex gap-3">
                 <MapPin size={16} className="mt-1" />
                 <span>
-                  Head Office: Gurugram, Haryana<br />
-                  Regional Office: Nashik, Maharashtra
+                  Head Office: Kaushal, 1st Floor, Near Gauri Shankar Mandir, Sector 9A, Gurugram - 122 001<br />
+Regional Office: 3rd Floor, Indira Heights, Old Gangapur Naka, Gangapur Road, Nashik - 422 005
                 </span>
               </li>
 
