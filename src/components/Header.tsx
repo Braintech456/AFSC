@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-
 import { Menu, X } from 'lucide-react';
 
 export default function Header() {
@@ -8,21 +7,22 @@ export default function Header() {
   const location = useLocation();
 
   const isActive = (path: string) =>
-    location.pathname === path ? 'text-blue-600' : 'text-gray-700';
+    location.pathname === path
+      ? 'text-blue-600 font-semibold'
+      : 'text-gray-700';
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <img
-  src="https://i.ibb.co/BV54hDTb/afsc-logo.png"
-  alt="AFSC Logo"
-  className="h-12 w-auto rounded-md"
-/>
 
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              src="https://i.ibb.co/BV54hDTb/afsc-logo.png"
+              alt="AFSC Logo"
+              className="h-12 w-auto"
+            />
             <div className="hidden sm:block">
               <h1 className="text-lg font-bold text-gray-900">
                 ACCOUNTING & FINANCE SKILL COUNCIL
@@ -35,23 +35,32 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link
-              to="/"
-              className={`${isActive('/')} hover:text-blue-700 font-medium transition-colors`}
-            >
+            <Link to="/" className={`${isActive('/')} hover:text-blue-700`}>
               Home
             </Link>
             <Link
               to="/certifications"
-              className={`${isActive('/certifications')} hover:text-blue-700 font-medium transition-colors`}
+              className={`${isActive('/certifications')} hover:text-blue-700`}
             >
               Certifications
             </Link>
             <Link
               to="/authorized-centers"
-              className={`${isActive('/authorized-centers')} hover:text-blue-700 font-medium transition-colors`}
+              className={`${isActive('/authorized-centers')} hover:text-blue-700`}
             >
               Authorized Centers
+            </Link>
+            <Link
+              to="/about"
+              className={`${isActive('/about')} hover:text-blue-700`}
+            >
+              About AFSC
+            </Link>
+            <Link
+              to="/contact"
+              className={`${isActive('/contact')} hover:text-blue-700`}
+            >
+              Contact
             </Link>
           </nav>
 
@@ -79,24 +88,38 @@ export default function Header() {
             <nav className="flex flex-col space-y-3">
               <Link
                 to="/"
-                className={`${isActive('/')} font-medium`}
+                className={isActive('/')}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/certifications"
-                className={`${isActive('/certifications')} font-medium`}
+                className={isActive('/certifications')}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Certifications
               </Link>
               <Link
                 to="/authorized-centers"
-                className={`${isActive('/authorized-centers')} font-medium`}
+                className={isActive('/authorized-centers')}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Authorized Centers
+              </Link>
+              <Link
+                to="/about"
+                className={isActive('/about')}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About AFSC
+              </Link>
+              <Link
+                to="/contact"
+                className={isActive('/contact')}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
               </Link>
               <Link to="/verify" onClick={() => setIsMenuOpen(false)}>
                 <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium w-full">
