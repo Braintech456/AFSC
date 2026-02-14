@@ -17,9 +17,12 @@ export default function Header() {
           
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">AFSC</span>
-            </div>
+            <img
+  src="https://i.ibb.co/BV54hDTb/afsc-logo.png"
+  alt="AFSC Logo"
+  className="h-12 w-auto rounded-md"
+/>
+
             <div className="hidden sm:block">
               <h1 className="text-lg font-bold text-gray-900">
                 ACCOUNTING & FINANCE SKILL COUNCIL
