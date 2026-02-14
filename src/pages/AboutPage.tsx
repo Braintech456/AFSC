@@ -9,67 +9,79 @@ export default function AboutPage() {
         subtitle="Accounting & Finance Skill Council of India"
       />
 
-      {/* Reduced top padding + original font scale */}
-      <main className="bg-slate-50 min-h-screen py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="bg-slate-50 min-h-screen">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-          {/* Intro */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              About <span className="text-blue-600">AFSC</span>
-            </h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              The Accounting & Finance Skill Council is the apex authority for
-              standardizing, regulating, and certifying accounting and finance
-              professionals across India.
+          {/* Intro – simple, readable */}
+          <section className="mb-14">
+            <p className="text-gray-700 text-lg leading-relaxed max-w-4xl">
+              The Accounting & Finance Skill Council (AFSC) works to strengthen
+              India’s accounting and finance ecosystem by setting consistent
+              standards for training, assessment, and certification. Operating
+              under the Skill India Mission, AFSC focuses on aligning education
+              with real industry requirements.
             </p>
-          </div>
+          </section>
 
-          {/* Cards */}
-          <div className="grid md:grid-cols-3 gap-8">
-
-            {/* Vision */}
-            <div className="bg-white border border-gray-300 rounded-xl p-8 hover:shadow-lg transition-all">
-              <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
-                <Eye className="text-white" size={32} />
+          {/* Vision & Mission – asymmetrical, modern */}
+          <section className="grid md:grid-cols-2 gap-10 mb-16">
+            <div className="bg-white rounded-xl border border-gray-200 p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <Eye className="text-blue-600" size={22} />
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Our Vision
+                </h3>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Vision</h3>
               <p className="text-gray-700 leading-relaxed">
-                To be India's premier skill development organization in accounting
-                and finance, recognized for excellence in training and certification.
+                To develop a skilled and credible workforce in accounting and
+                finance, capable of supporting India’s growing economy and
+                meeting global professional standards.
               </p>
             </div>
 
-            {/* Mission */}
-            <div className="bg-white border border-gray-300 rounded-xl p-8 hover:shadow-lg transition-all">
-              <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
-                <Target className="text-white" size={32} />
+            <div className="bg-white rounded-xl border border-gray-200 p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <Target className="text-blue-600" size={22} />
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Our Mission
+                </h3>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Mission</h3>
               <p className="text-gray-700 leading-relaxed">
-                To deliver industry-relevant training through standardized curriculum
-                and certified training centers across India.
+                To provide structured, transparent, and industry-aligned
+                certification frameworks through authorized training centers,
+                ensuring consistent quality and measurable outcomes.
               </p>
             </div>
+          </section>
 
-            {/* Core Objectives */}
-            <div className="bg-white border border-gray-300 rounded-xl p-8 hover:shadow-lg transition-all">
-              <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
-                <Lightbulb className="text-white" size={32} />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          {/* Core Objectives – simple list, not flashy cards */}
+          <section className="bg-white rounded-xl border border-gray-200 p-10">
+            <div className="flex items-center gap-3 mb-6">
+              <Lightbulb className="text-blue-600" size={22} />
+              <h3 className="text-xl font-semibold text-gray-900">
                 Core Objectives
               </h3>
-              <ul className="space-y-3 text-gray-700">
-                <li>• Standardized curriculum and assessments</li>
-                <li>• Regulation of authorized centers</li>
-                <li>• Government-recognized certifications</li>
-                <li>• Quality and credibility assurance</li>
-              </ul>
             </div>
 
-          </div>
+            <ul className="grid sm:grid-cols-2 gap-4 text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 mt-1">—</span>
+                Establish standardized curriculum and assessment models
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 mt-1">—</span>
+                Monitor and regulate authorized training centers
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 mt-1">—</span>
+                Issue and maintain verifiable, government-recognized certifications
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 mt-1">—</span>
+                Promote transparency, quality, and trust across the ecosystem
+              </li>
+            </ul>
+          </section>
 
         </div>
       </main>
