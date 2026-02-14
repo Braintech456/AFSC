@@ -4,9 +4,11 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 import CertificationsPage from './pages/CertificationsPage';
 import VerifyPage from './pages/VerifyPage';
 import AuthorizedCentersPage from './pages/AuthorizedCentersPage';
+import ContactPage from './pages/ContactPage';
 
 export default function App() {
   return (
@@ -17,8 +19,9 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/certifications" element={<CertificationsPage />} />
-        <Route path="/verify" element={<VerifyPage />} />
         <Route path="/authorized-centers" element={<AuthorizedCentersPage />} />
+        <Route path="/verify" element={<VerifyPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
 
       <Footer />
