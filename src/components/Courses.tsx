@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import Link from 'next/link'; // Assuming Next.js; adjust for other routers
+import { useNavigate } from 'react-router-dom'; // Assuming react-router-dom is installed
 import {
   Clock,
   Award,
@@ -68,7 +67,13 @@ const certifications = [
   },
 ];
 
-export default function Certifications() {
+export default function Courses() {
+  const navigate = useNavigate();
+
+  const handleViewDetails = (index) => {
+    navigate(`/certification-details/${index}`); // Navigate to details page with ID
+  };
+
   return (
     <section id="certifications" className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -132,11 +137,12 @@ export default function Certifications() {
                   </div>
                 </div>
 
-                <Link href={`/certifications/${index}`}>
-                  <button className="mt-6 w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
-                    View Certification Details
-                  </button>
-                </Link>
+                <button
+                  onClick={() => handleViewDetails(index)}
+                  className="mt-6 w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 rounded-lg font-semibold transition-colors duration-300"
+                >
+                  View Certification Details
+                </button>
               </div>
             );
           })}
