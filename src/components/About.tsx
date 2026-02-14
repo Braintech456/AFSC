@@ -28,9 +28,10 @@ export default function About() {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Vision</h3>
             <p className="text-gray-700 leading-relaxed">
-              To establish AFSC as the premier authority for standardized
-              certification in accounting and finance, ensuring uniformity,
-              quality, and recognition across all authorized centers nationwide.
+              To be India's premier skill development organization in accounting and finance,
+recognized for excellence in training, certification, and creating employment-ready
+professionals who contribute to the nation's economic growth.
+
             </p>
           </div>
 
