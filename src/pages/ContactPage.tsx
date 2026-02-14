@@ -36,8 +36,8 @@ Contact Information
 <div>
 <p className="font-semibold text-gray-900">Office Locations</p>
 <p className="text-gray-700">
-Head Office: Gurugram, Haryana<br />
-Regional Office: Nashik, Maharashtra
+Head Office: Kaushal, 1st Floor, Near Gauri Shankar Mandir, Sector 9A, Gurugram - 122 001<br />
+Regional Office: 3rd Floor, Indira Heights, Old Gangapur Naka, Gangapur Road, Nashik - 422 005
 </p>
 </div>
 </div>
