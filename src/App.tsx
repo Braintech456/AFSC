@@ -15,6 +15,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/certifications" element={<CertificationsPage />} />
         <Route path="/verify" element={<VerifyPage />} />
         <Route path="/authorized-centers" element={<AuthorizedCentersPage />} />
