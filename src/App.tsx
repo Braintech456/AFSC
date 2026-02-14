@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import CertificationsPage from './pages/CertificationsPage';
-import AuthorizedCentersPage from './pages/AuthorizedCentersPage';
 import VerifyPage from './pages/VerifyPage';
 import ContactPage from './pages/ContactPage';
 
