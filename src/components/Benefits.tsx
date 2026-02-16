@@ -105,7 +105,7 @@ export default function Benefits() {
             recognized, and valid nationwide.
           </p>
           <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-            Find an Authorized Center
+            View Certifications
           </button>
         </div>
       </div>
