@@ -11,7 +11,7 @@ const Membership = (): JSX.Element => {
       {/* Hero Section */}
       <section className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-6 py-20 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+          <h3 className="text-4xl md:text-5xl font-bold text-gray-900">
             AFSC <span className="text-blue-600">Membership</span>
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-700 mx-auto my-8 rounded-full"></div>
