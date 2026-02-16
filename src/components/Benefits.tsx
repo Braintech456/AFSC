@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Award from 'lucide-react/dist/esm/icons/award';
 import Briefcase from 'lucide-react/dist/esm/icons/briefcase';
 import BookOpen from 'lucide-react/dist/esm/icons/book-open';
@@ -58,10 +60,11 @@ const benefits = [
   },
 ];
 
-export default function Benefits() {
+export default function Benefits(): JSX.Element {
   return (
     <section id="benefits" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -74,7 +77,7 @@ export default function Benefits() {
           </p>
         </div>
 
-        {/* Benefits grid */}
+        {/* Benefits Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
@@ -99,15 +102,21 @@ export default function Benefits() {
 
         {/* CTA */}
         <div className="mt-16 bg-blue-600 rounded-xl p-8 md:p-12 text-white text-center">
-          <h3 className="text-3xl font-bold mb-4">Earn Your AFSC Certification</h3>
+          <h3 className="text-3xl font-bold mb-4">
+            Earn Your AFSC Certification
+          </h3>
           <p className="text-blue-50 text-lg mb-8 max-w-2xl mx-auto">
             Get certified from an AFSC-authorized training center. Your credential will be verified,
             recognized, and valid nationwide.
           </p>
-          <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-            View Certifications
-          </button>
+
+          <Link to="/certifications">
+            <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+              View Certifications
+            </button>
+          </Link>
         </div>
+
       </div>
     </section>
   );
