@@ -18,7 +18,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg text-blue-50 mb-8 leading-relaxed">
-              AFSC is the official skill certification authority for accounting
+              AFSC is the skill certification authority for accounting
               and finance professionals in India, operating under the Skill
               India Mission with standardized, government-recognized
               certification programs.
