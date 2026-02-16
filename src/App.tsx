@@ -9,8 +9,9 @@ import CertificationsPage from './pages/CertificationsPage';
 import AuthorizedCentersPage from './pages/AuthorizedCentersPage';
 import VerifyPage from './pages/VerifyPage';
 import ContactPage from './pages/ContactPage';
+import Membership from './pages/Membership'; // ✅ NEW
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Header />
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/certifications" element={<CertificationsPage />} />
         <Route path="/authorized-centers" element={<AuthorizedCentersPage />} />
+        <Route path="/membership" element={<Membership />} /> {/* ✅ NEW */}
         <Route path="/verify" element={<VerifyPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
