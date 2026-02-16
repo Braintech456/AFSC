@@ -1,124 +1,257 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Professional Courses</title>
+export type Course = {
+  slug: string;
+  title: string;
+  duration: string;
+  level: string;
+  description: string;
+  overview: string;
+  topics: string[];
+  roadmap: string[];
+  careers: string[];
+};
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 20px;
-    }
-
-    .course-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
-    }
-
-    .course-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .card-header {
-      padding: 18px 20px;
-      color: white;
-      font-size: 1.1em;
-      font-weight: bold;
-    }
-
-    .card-body {
-      padding: 20px;
-    }
-
-    .card-body h3 {
-      margin-top: 0;
-      font-size: 1em;
-    }
-
-    .topics ul,
-    .roadmap ul,
-    .careers ul {
-      list-style: none;
-      padding: 0;
-      margin: 8px 0;
-    }
-
-    .topics li,
-    .roadmap li,
-    .careers li {
-      background: #f0f0f0;
-      margin: 5px 0;
-      padding: 6px 10px;
-      border-radius: 6px;
-      font-size: 0.9em;
-    }
-
-    .level {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      background: rgba(255, 255, 255, 0.9);
-      color: #333;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: 0.75em;
-      font-weight: bold;
-    }
-
-    /* Header gradients only */
-    .course-1 .card-header { background: linear-gradient(135deg, #667eea, #764ba2); }
-    .course-2 .card-header { background: linear-gradient(135deg, #f093fb, #f5576c); }
-    .course-3 .card-header { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-    .course-4 .card-header { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-    .course-5 .card-header { background: linear-gradient(135deg, #fa709a, #fee140); }
-    .course-6 .card-header { background: linear-gradient(135deg, #a8edea, #fed6e3); }
-    .course-7 .card-header { background: linear-gradient(135deg, #d299c2, #fef9d7); }
-    .course-8 .card-header { background: linear-gradient(135deg, #f093fb, #f5576c); }
-    .course-9 .card-header { background: linear-gradient(135deg, #667eea, #764ba2); }
-  </style>
-</head>
-
-<body>
-  <h1>Professional Courses</h1>
-
-  <div class="container">
-
-    <!-- Example Card (Repeat structure for others) -->
-    <div class="course-card course-1">
-      <div class="level">Beginner</div>
-      <div class="card-header">Certified Financial Literacy</div>
-      <div class="card-body">
-        <h3>Duration: 1 Month</h3>
-        <p><strong>Description:</strong> Establish a robust foundation in banking, digital payments, insurance, and personal financial planning.</p>
-        <p><strong>Overview:</strong> Enhances financial awareness and equips learners with real-world personal finance skills.</p>
-      </div>
-    </div>
-
-    <!-- KEEP ALL OTHER CARDS SAME STRUCTURE -->
-    <!-- Your content is already correct, only CSS logic was fixed -->
-
-  </div>
-</body>
-</html>
+export const coursesData: Course[] = [
+  {
+    slug: 'certified-financial-literacy',
+    title: 'Certified Financial Literacy',
+    duration: '1 Month',
+    level: 'Beginner',
+    description:
+      'Build a strong foundation in banking, digital payments, insurance, and personal financial planning.',
+    overview:
+      'This program enhances financial awareness and equips learners with real-world personal finance skills.',
+    topics: [
+      'Banking Fundamentals',
+      'Digital Payment Systems',
+      'Insurance Principles',
+      'Personal Financial Planning',
+    ],
+    roadmap: [
+      'Introduction to Financial Literacy',
+      'Banking and Digital Payments',
+      'Insurance and Risk Management',
+      'Personal Financial Planning',
+    ],
+    careers: [
+      'Banking Assistant',
+      'Finance Executive',
+      'Accounts Trainee',
+    ],
+  },
+  {
+    slug: 'certified-professional-accountant-with-tally',
+    title: 'Certified Professional Accountant (With Tally)',
+    duration: '2 Months',
+    level: 'Beginner to Intermediate',
+    description:
+      'Master fundamental accounting principles through hands-on training in Tally Prime and GST essentials.',
+    overview:
+      'Practical accounting program focusing on Tally Prime proficiency and GST fundamentals.',
+    topics: [
+      'Journal and Ledger',
+      'Final Accounts',
+      'Tally Prime',
+      'GST Fundamentals',
+    ],
+    roadmap: [
+      'Accounting Fundamentals',
+      'Journal and Ledger Management',
+      'Tally Prime Practical Training',
+      'GST Basics and Compliance',
+    ],
+    careers: [
+      'Junior Accountant',
+      'Accounts Executive',
+      'Tally Operator',
+    ],
+  },
+  {
+    slug: 'certified-financial-accounting-audit-with-tally',
+    title: 'Certified Financial Accounting & Audit Professional (With Tally)',
+    duration: '4 Months',
+    level: 'Intermediate to Advanced',
+    description:
+      'Advanced accounting and audit practices with extensive hands-on experience using Tally.',
+    overview:
+      'In-depth training in audit standards, compliance, and advanced Tally applications.',
+    topics: [
+      'Financial Accounting',
+      'Audit Procedures',
+      'Advanced Tally',
+      'Regulatory Compliance',
+    ],
+    roadmap: [
+      'Advanced Accounting Concepts',
+      'Auditing Standards and Practices',
+      'Advanced Tally Implementation',
+      'Compliance and Reporting',
+    ],
+    careers: [
+      'Audit Executive',
+      'Senior Accountant',
+      'Finance Analyst',
+    ],
+  },
+  {
+    slug: 'certified-gst-practitioner',
+    title: 'Certified GST Practitioner',
+    duration: '1 Month',
+    level: 'Intermediate',
+    description:
+      'Gain expertise in GST registration, return filing, refunds, and compliance management.',
+    overview:
+      'Focused GST training aligned with current indirect tax regulations.',
+    topics: [
+      'GST Registration',
+      'Return Filing',
+      'Refunds',
+      'Compliance Management',
+    ],
+    roadmap: [
+      'GST Framework Overview',
+      'GST Registration and Setup',
+      'GST Return Filing',
+      'GST Compliance and Best Practices',
+    ],
+    careers: [
+      'GST Executive',
+      'Tax Assistant',
+      'Compliance Officer',
+    ],
+  },
+  {
+    slug: 'certified-income-tax-tds-compliance',
+    title: 'Certified Income Tax & TDS Compliance Professional',
+    duration: '2 Months',
+    level: 'Intermediate',
+    description:
+      'Develop skills in Income Tax provisions, return filing, deductions, and TDS/TCS compliance.',
+    overview:
+      'Covers Income Tax Act essentials and practical compliance procedures.',
+    topics: [
+      'Income Tax Act',
+      'Income Tax Return Filing',
+      'TDS',
+      'TCS',
+    ],
+    roadmap: [
+      'Income Tax Fundamentals',
+      'Computation of Income',
+      'Return Filing Procedures',
+      'TDS and TCS Management',
+    ],
+    careers: [
+      'Tax Executive',
+      'Accounts Officer',
+      'Compliance Assistant',
+    ],
+  },
+  {
+    slug: 'certified-chartered-tax-practitioner',
+    title: 'Certified Chartered Tax Practitioner',
+    duration: '3 Months',
+    level: 'Advanced',
+    description:
+      'Professional training in tax consultancy covering direct and indirect taxation.',
+    overview:
+      'Designed for independent tax practice and consultancy roles.',
+    topics: [
+      'Direct Tax Consultancy',
+      'Indirect Tax Advisory',
+      'MSME Compliance',
+      'Tax Planning',
+    ],
+    roadmap: [
+      'Direct Tax Consultancy Practices',
+      'Indirect Tax Advisory Services',
+      'MSME Compliance Frameworks',
+      'Advanced Tax Planning',
+    ],
+    careers: [
+      'Tax Consultant',
+      'Independent Tax Practitioner',
+      'Tax Advisor',
+    ],
+  },
+  {
+    slug: 'certified-public-accountant',
+    title: 'Certified Public Accountant',
+    duration: '6 Months',
+    level: 'Advanced',
+    description:
+      'Comprehensive program covering accounting, auditing, taxation, and strategic finance.',
+    overview:
+      'Prepares professionals for leadership roles in accounting and finance.',
+    topics: [
+      'Advanced Accounting',
+      'Auditing and Assurance',
+      'Taxation',
+      'Strategic Finance',
+    ],
+    roadmap: [
+      'Advanced Accounting Techniques',
+      'Auditing and Assurance Standards',
+      'Taxation and Compliance',
+      'Strategic Finance Applications',
+    ],
+    careers: [
+      'Public Accountant',
+      'Finance Manager',
+      'Audit Manager',
+    ],
+  },
+  {
+    slug: 'financial-modelling-business-analytics',
+    title: 'Certified Financial Modelling & Business Analytics Professional',
+    duration: '6 Months',
+    level: 'Advanced',
+    description:
+      'Master financial modelling, analytics, forecasting, and data-driven decision-making.',
+    overview:
+      'Analytics-focused finance program for modern business environments.',
+    topics: [
+      'Financial Modelling',
+      'Business Analytics',
+      'Forecasting',
+      'Data Visualization',
+    ],
+    roadmap: [
+      'Financial Modelling Fundamentals',
+      'Advanced Business Analytics',
+      'Forecasting and Projections',
+      'Decision-Making Modelling',
+    ],
+    careers: [
+      'Financial Analyst',
+      'Business Analyst',
+      'Data Analyst',
+    ],
+  },
+  {
+    slug: 'tally-prime-professional',
+    title: 'Tally Prime Professional',
+    duration: '3 Months',
+    level: 'Beginner to Advanced',
+    description:
+      'Dedicated training in Tally Prime covering accounting, GST, payroll, and inventory.',
+    overview:
+      'Complete hands-on Tally Prime program for accounting professionals.',
+    topics: [
+      'Tally Prime Operations',
+      'GST Integration',
+      'Inventory Management',
+      'Payroll Processing',
+    ],
+    roadmap: [
+      'Tally Prime Basics',
+      'Accounting in Tally Prime',
+      'GST and Payroll Integration',
+      'Advanced Reporting and Analysis',
+    ],
+    careers: [
+      'Tally Operator',
+      'Accounts Executive',
+      'GST Executive',
+    ],
+  },
+];
