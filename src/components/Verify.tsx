@@ -133,7 +133,7 @@ export default function Verify() {
                 report to:
               </p>
               <p className="font-semibold text-gray-900 mb-2">
-                verification@afsc.gov.in
+                afsc.india@zohomail.in
               </p>
               <p className="text-sm text-gray-600">
                 Response time: 24–48 hours for all verification inquiries
