@@ -11,62 +11,92 @@ import {
 
 const certifications = [
   {
+    icon: BookOpen,
+    title: 'Certified Financial Literacy',
+    duration: '1 Month',
+    level: 'Beginner',
+    description:
+      'Build a strong foundation in personal finance, banking, insurance, digital payments, and financial planning.',
+    topics: [
+      'Banking Basics',
+      'Digital Payments',
+      'Insurance & Risk',
+      'Financial Planning',
+    ],
+  },
+  {
     icon: Calculator,
-    title: 'Tally Prime Professional',
-    duration: '3 Months',
-    level: 'Beginner to Advanced',
-    description:
-      'Master Tally Prime with GST, TDS, and advanced accounting features. Industry-recognized certification included.',
-    topics: ['GST Compliance', 'Inventory Management', 'Payroll Processing', 'Financial Reports'],
-  },
-  {
-    icon: FileText,
-    title: 'GST Practitioner Course',
+    title: 'Certified Professional Accountant (With Tally)',
     duration: '2 Months',
-    level: 'Intermediate',
+    level: 'Beginner to Intermediate',
     description:
-      'Comprehensive GST training covering filing, compliance, and advisory services for businesses.',
-    topics: ['GST Filing', 'Return Processing', 'Audit Preparation', 'Compliance Management'],
-  },
-  {
-    icon: BarChart3,
-    title: 'Financial Accounting',
-    duration: '4 Months',
-    level: 'Foundation to Advanced',
-    description:
-      'Complete accounting fundamentals to advanced financial management and reporting standards.',
-    topics: ['Balance Sheet', 'P&L Statements', 'Cash Flow', 'Financial Analysis'],
-  },
-  {
-    icon: TrendingUp,
-    title: 'Taxation & Tax Planning',
-    duration: '3 Months',
-    level: 'Advanced',
-    description:
-      'In-depth training on Income Tax, TDS, and strategic tax planning for individuals and businesses.',
-    topics: ['Income Tax Returns', 'TDS Filing', 'Tax Planning', 'Assessment Procedures'],
+      'Covers accounting fundamentals with hands-on training in Tally Prime, invoicing, inventory, and GST basics.',
+    topics: [
+      'Journal & Ledger',
+      'Final Accounts',
+      'Tally Prime',
+      'GST Basics',
+    ],
   },
   {
     icon: Shield,
-    title: 'Audit & Assurance',
-    duration: '3 Months',
-    level: 'Advanced',
+    title: 'Certified Financial Accounting & Audit Professional (With Tally)',
+    duration: '4 Months',
+    level: 'Intermediate to Advanced',
     description:
-      'Professional training in auditing standards, procedures, and assurance services.',
-    topics: ['Internal Audit', 'Statutory Audit', 'Risk Assessment', 'Compliance Checking'],
+      'Advanced training in financial accounting, auditing practices, and real-world audit execution with Tally.',
+    topics: [
+      'Financial Accounting',
+      'Audit Procedures',
+      'Tally Advanced',
+      'Compliance & Reporting',
+    ],
   },
   {
-    icon: BookOpen,
-    title: 'Corporate Accounting',
-    duration: '4 Months',
+    icon: FileText,
+    title: 'Certified GST Practitioner',
+    duration: '1 Month',
+    level: 'Intermediate',
+    description:
+      'Practical GST training including registrations, return filing, refunds, and compliance assistance.',
+    topics: [
+      'GST Registration',
+      'Return Filing',
+      'Refunds',
+      'GST Compliance',
+    ],
+  },
+  {
+    icon: TrendingUp,
+    title: 'Certified Income Tax & TDS Compliance Professional',
+    duration: '2 Months',
+    level: 'Intermediate',
+    description:
+      'Covers Income Tax provisions, return filing, deductions, slabs, and practical TDS/TCS compliance.',
+    topics: [
+      'Income Tax Act',
+      'IT Returns',
+      'TDS & TCS',
+      'Compliance Filing',
+    ],
+  },
+  {
+    icon: BarChart3,
+    title: 'Certified Financial Modelling & Business Analytics Professional',
+    duration: '6 Months',
     level: 'Advanced',
     description:
-      'Specialized training in corporate financial management, mergers, and acquisitions.',
-    topics: ['Share Capital', 'Debentures', 'Company Accounts', 'Amalgamation'],
+      'Learn financial modelling, data analysis, forecasting, and analytics-driven business decision making.',
+    topics: [
+      'Financial Modelling',
+      'Data Analytics',
+      'Forecasting',
+      'Business Insights',
+    ],
   },
 ];
 
-export default function Courses() {
+export default function Courses(): JSX.Element {
   return (
     <section id="certifications" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,12 +104,12 @@ export default function Courses() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            AFSC <span className="text-blue-600">Certifications</span>
+            AFSC <span className="text-blue-600">Certification Programs</span>
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Standardized certification programs recognized by the Government of India,
-            offered exclusively through authorized AFSC training centers.
+            Skill development training programs designed as per industry and government
+            standards, delivered through authorized AFSC training centers.
           </p>
         </div>
 
