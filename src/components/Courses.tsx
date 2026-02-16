@@ -16,11 +16,11 @@ const certifications = [
     duration: '1 Month',
     level: 'Beginner',
     description:
-      'Build a strong foundation in personal finance, banking, insurance, digital payments, and financial planning.',
+      'Build a strong foundation in banking, digital payments, insurance, and personal financial planning.',
     topics: [
       'Banking Basics',
       'Digital Payments',
-      'Insurance & Risk',
+      'Insurance',
       'Financial Planning',
     ],
   },
@@ -30,7 +30,7 @@ const certifications = [
     duration: '2 Months',
     level: 'Beginner to Intermediate',
     description:
-      'Covers accounting fundamentals with hands-on training in Tally Prime, invoicing, inventory, and GST basics.',
+      'Fundamental accounting principles with hands-on training in Tally Prime and GST basics.',
     topics: [
       'Journal & Ledger',
       'Final Accounts',
@@ -44,12 +44,12 @@ const certifications = [
     duration: '4 Months',
     level: 'Intermediate to Advanced',
     description:
-      'Advanced training in financial accounting, auditing practices, and real-world audit execution with Tally.',
+      'Advanced financial accounting and audit practices with practical exposure using Tally.',
     topics: [
       'Financial Accounting',
       'Audit Procedures',
-      'Tally Advanced',
-      'Compliance & Reporting',
+      'Advanced Tally',
+      'Compliance Reporting',
     ],
   },
   {
@@ -58,7 +58,7 @@ const certifications = [
     duration: '1 Month',
     level: 'Intermediate',
     description:
-      'Practical GST training including registrations, return filing, refunds, and compliance assistance.',
+      'GST registration, return filing, refunds, and compliance support as per government norms.',
     topics: [
       'GST Registration',
       'Return Filing',
@@ -72,7 +72,7 @@ const certifications = [
     duration: '2 Months',
     level: 'Intermediate',
     description:
-      'Covers Income Tax provisions, return filing, deductions, slabs, and practical TDS/TCS compliance.',
+      'Income Tax provisions, return filing, deductions, and practical TDS/TCS compliance.',
     topics: [
       'Income Tax Act',
       'IT Returns',
@@ -81,17 +81,59 @@ const certifications = [
     ],
   },
   {
+    icon: Award,
+    title: 'Certified Chartered Tax Practitioner',
+    duration: '3 Months',
+    level: 'Advanced',
+    description:
+      'Professional tax consultancy training covering direct & indirect tax compliance for MSMEs.',
+    topics: [
+      'Tax Consultancy',
+      'Direct & Indirect Taxes',
+      'MSME Compliance',
+      'Tax Planning',
+    ],
+  },
+  {
+    icon: Shield,
+    title: 'Certified Public Accountant',
+    duration: '6 Months',
+    level: 'Advanced',
+    description:
+      'Comprehensive program covering accounting, audit, taxation, compliance, and financial management.',
+    topics: [
+      'Accounting & Reporting',
+      'Auditing',
+      'Taxation',
+      'Strategic Finance',
+    ],
+  },
+  {
     icon: BarChart3,
     title: 'Certified Financial Modelling & Business Analytics Professional',
     duration: '6 Months',
     level: 'Advanced',
     description:
-      'Learn financial modelling, data analysis, forecasting, and analytics-driven business decision making.',
+      'Financial modelling, forecasting, analytics, and data-driven business decision-making.',
     topics: [
       'Financial Modelling',
-      'Data Analytics',
+      'Business Analytics',
       'Forecasting',
-      'Business Insights',
+      'Data Visualization',
+    ],
+  },
+  {
+    icon: Calculator,
+    title: 'Tally Prime Professional',
+    duration: '3 Months',
+    level: 'Beginner to Advanced',
+    description:
+      'Dedicated Tally Prime training covering accounting, GST, payroll, inventory, and reporting.',
+    topics: [
+      'Tally Prime',
+      'GST in Tally',
+      'Inventory Management',
+      'Payroll Processing',
     ],
   },
 ];
@@ -108,8 +150,8 @@ export default function Courses(): JSX.Element {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Skill development training programs designed as per industry and government
-            standards, delivered through authorized AFSC training centers.
+            Skill development programs aligned with government standards and
+            delivered through authorized AFSC training centers.
           </p>
         </div>
 
