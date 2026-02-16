@@ -15,7 +15,7 @@ export default function About() {
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             The Accounting & Finance Skill Council is the apex authority for
             standardizing, regulating, and certifying accounting and finance
-            professionals across India.
+            professionals across India by Assessment Agency Recognized by DGT, NCVET & MSDE (Govt. of India).
           </p>
         </div>
 
