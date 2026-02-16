@@ -10,7 +10,6 @@ import AuthorizedCentersPage from './pages/AuthorizedCentersPage';
 import VerifyPage from './pages/VerifyPage';
 import ContactPage from './pages/ContactPage';
 import Membership from './pages/Membership';
-import CourseDetails from './pages/CourseDetails'; // ✅ REQUIRED IMPORT
 
 export default function App(): JSX.Element {
   return (
