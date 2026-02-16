@@ -10,6 +10,7 @@ import AuthorizedCentersPage from './pages/AuthorizedCentersPage';
 import VerifyPage from './pages/VerifyPage';
 import ContactPage from './pages/ContactPage';
 import Membership from './pages/Membership';
+import CourseDetails from './pages/CourseDetails'; // ✅ REQUIRED
 
 export default function App(): JSX.Element {
   return (
@@ -19,9 +20,11 @@ export default function App(): JSX.Element {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+
+        {/* Certifications Listing */}
         <Route path="/certifications" element={<CertificationsPage />} />
 
-        {/* Course Details (dynamic) */}
+        {/* Certification Details (Dynamic) */}
         <Route path="/certifications/:slug" element={<CourseDetails />} />
 
         <Route path="/authorized-centers" element={<AuthorizedCentersPage />} />
