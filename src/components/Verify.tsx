@@ -21,58 +21,68 @@ export default function Verify() {
         {/* Cards */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           
-          {/* Certificate */}
+          {/* Verify Individual Certification */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
               <Award className="text-white" size={28} />
             </div>
+
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Verify Individual Certification
             </h2>
+
             <p className="text-gray-600 mb-6">
-              Search our certification database to verify individual credentials
-              and certification validity issued by AFSC.
+              Verify individual credentials issued by AFSC using the certificate
+              ID and the registered candidate email address.
             </p>
+
             <form className="space-y-4">
               <input
                 type="text"
                 placeholder="Certification ID"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none"
               />
+
               <input
-                type="text"
-                placeholder="Candidate Name"
+                type="email"
+                placeholder="Registered Candidate Email"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none"
               />
+
               <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition-colors">
                 Verify Certificate
               </button>
             </form>
           </div>
 
-          {/* Center */}
+          {/* Verify Authorized Center */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
               <Building2 className="text-white" size={28} />
             </div>
+
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Verify Authorized Center
             </h2>
+
             <p className="text-gray-600 mb-6">
-              Check if a training center is officially authorized by AFSC to
-              deliver certification programs.
+              Confirm whether a training center is officially authorized by AFSC
+              using the registered center email address.
             </p>
+
             <form className="space-y-4">
               <input
                 type="text"
                 placeholder="Center Name"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none"
               />
+
               <input
-                type="text"
-                placeholder="Authorization Number"
+                type="email"
+                placeholder="Official Center Email"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none"
               />
+
               <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition-colors">
                 Verify Center
               </button>
@@ -90,19 +100,17 @@ export default function Verify() {
             <div>
               <p className="mb-4">
                 The AFSC Verification System is the official registry maintained
-                by the Accounting & Finance Skill Council to authenticate all
-                credentials and authorized centers.
+                by the Accounting & Finance Skill Council to authenticate
+                certifications and authorized training centers.
               </p>
               <p>
-                All certifications issued by AFSC-authorized centers are
-                registered in this system and can be verified for authenticity.
-                This ensures employer and stakeholder confidence in credential
-                validity.
+                Email-based verification helps reduce misuse and ensures greater
+                accuracy while validating official AFSC records.
               </p>
             </div>
             <div>
               <p className="mb-4">
-                For any verification discrepancies or fraudulent claims, please
+                For any verification discrepancies or suspected misuse, please
                 report to:
               </p>
               <p className="font-semibold text-gray-900 mb-2">
