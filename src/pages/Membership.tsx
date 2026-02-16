@@ -1,6 +1,6 @@
 import { CheckCircle, Users, GraduationCap, Building2, FileText } from "lucide-react";
 
-export default function MembershipPage() {
+export default function Membership() {
   return (
     <main className="bg-gray-50 text-gray-800">
 
