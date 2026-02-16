@@ -1,6 +1,6 @@
 import { CheckCircle, Users, GraduationCap, Building2, FileText } from "lucide-react";
 
-export default function Membership() {
+const Membership = (): JSX.Element => {
   return (
     <main className="bg-gray-50 text-gray-800">
 
@@ -33,7 +33,7 @@ export default function Membership() {
 
         <div className="grid md:grid-cols-3 gap-8">
 
-          {/* Institutional Member */}
+          {/* Institutional Membership */}
           <div className="bg-white rounded-xl shadow-sm border p-8">
             <Building2 className="text-blue-600 mb-4" size={36} />
             <h3 className="text-xl font-semibold mb-4">
@@ -46,7 +46,7 @@ export default function Membership() {
             <ul className="space-y-3 text-sm">
               <li className="flex gap-2">
                 <CheckCircle className="text-green-600" size={18} />
-                Industry-aligned skill certifications
+                Industry-aligned certifications
               </li>
               <li className="flex gap-2">
                 <CheckCircle className="text-green-600" size={18} />
@@ -63,7 +63,7 @@ export default function Membership() {
             </ul>
           </div>
 
-          {/* Individual Member */}
+          {/* Individual Membership */}
           <div className="bg-white rounded-xl shadow-sm border p-8">
             <GraduationCap className="text-blue-600 mb-4" size={36} />
             <h3 className="text-xl font-semibold mb-4">
@@ -93,7 +93,7 @@ export default function Membership() {
             </ul>
           </div>
 
-          {/* Industry Member */}
+          {/* Industry Membership */}
           <div className="bg-white rounded-xl shadow-sm border p-8">
             <Users className="text-blue-600 mb-4" size={36} />
             <h3 className="text-xl font-semibold mb-4">
@@ -106,7 +106,7 @@ export default function Membership() {
             <ul className="space-y-3 text-sm">
               <li className="flex gap-2">
                 <CheckCircle className="text-green-600" size={18} />
-                Access to skilled, industry-ready talent
+                Access to industry-ready talent
               </li>
               <li className="flex gap-2">
                 <CheckCircle className="text-green-600" size={18} />
@@ -139,7 +139,7 @@ export default function Membership() {
               "Document Verification",
               "AFSC Review & Approval",
               "Membership Certificate Issuance",
-            ].map((step, index) => (
+            ].map((step: string, index: number) => (
               <div
                 key={index}
                 className="bg-gray-50 border rounded-lg p-6"
@@ -174,4 +174,6 @@ export default function Membership() {
 
     </main>
   );
-}
+};
+
+export default Membership;
