@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
-export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+export default function Header(): JSX.Element {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const location = useLocation();
 
-  const isActive = (path: string) =>
+  const isActive = (path: string): string =>
     location.pathname === path
       ? 'text-blue-600 font-semibold'
       : 'text-gray-700';
@@ -49,6 +49,12 @@ export default function Header() {
               className={`${isActive('/authorized-centers')} hover:text-blue-700`}
             >
               Authorized Centers
+            </Link>
+            <Link
+              to="/membership"
+              className={`${isActive('/membership')} hover:text-blue-700`}
+            >
+              Membership
             </Link>
             <Link
               to="/about"
@@ -106,6 +112,13 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Authorized Centers
+              </Link>
+              <Link
+                to="/membership"
+                className={isActive('/membership')}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Membership
               </Link>
               <Link
                 to="/about"
