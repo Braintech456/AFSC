@@ -1,9 +1,12 @@
 import { CheckCircle, Users, GraduationCap, Building2, FileText } from "lucide-react";
-import AffiliationStrip from '../components/AffiliationStrip';
+import AffiliationStrip from "../components/AffiliationStrip";
 
 const Membership = (): JSX.Element => {
   return (
-    <main className="bg-gray-50 text-gray-800">
+    <main className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
+
+      {/* Affiliation Strip */}
+      <AffiliationStrip />
 
       {/* Hero Section */}
       <section className="bg-white border-b">
@@ -11,40 +14,33 @@ const Membership = (): JSX.Element => {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
             AFSC <span className="text-blue-600">Membership</span>
           </h1>
-          <p className="mt-6 text-lg max-w-3xl mx-auto text-gray-600">
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-700 mx-auto my-8 rounded-full"></div>
+          <p className="mt-4 text-lg max-w-3xl mx-auto text-gray-700">
             Become a member of the Accounting & Finance Skill Council and be part of
             India’s standardized skill development ecosystem under Skill India Mission.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <a
-              href="/contact"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
-            >
-              Apply for Membership
-            </a>
-          </div>
         </div>
       </section>
 
       {/* Membership Categories */}
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
           Membership Categories
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
 
           {/* Institutional Membership */}
-          <div className="bg-white rounded-xl shadow-sm border p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
             <Building2 className="text-blue-600 mb-4" size={36} />
             <h3 className="text-xl font-semibold mb-4">
               Institutional Membership
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-700 mb-6">
               For colleges, universities, and educational institutions aiming to
               enhance employability and industry relevance.
             </p>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm text-gray-700">
               <li className="flex gap-2">
                 <CheckCircle className="text-green-600" size={18} />
                 Industry-aligned certifications
@@ -65,16 +61,16 @@ const Membership = (): JSX.Element => {
           </div>
 
           {/* Individual Membership */}
-          <div className="bg-white rounded-xl shadow-sm border p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
             <GraduationCap className="text-blue-600 mb-4" size={36} />
             <h3 className="text-xl font-semibold mb-4">
               Individual Membership
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-700 mb-6">
               For students, fresh graduates, and professionals seeking career
               growth in accounting, finance, and auditing.
             </p>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm text-gray-700">
               <li className="flex gap-2">
                 <CheckCircle className="text-green-600" size={18} />
                 Practical, hands-on training
@@ -95,16 +91,16 @@ const Membership = (): JSX.Element => {
           </div>
 
           {/* Industry Membership */}
-          <div className="bg-white rounded-xl shadow-sm border p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
             <Users className="text-blue-600 mb-4" size={36} />
             <h3 className="text-xl font-semibold mb-4">
               Industry / Employer Membership
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-700 mb-6">
               For corporates, accounting firms, and employers seeking skilled,
               job-ready finance professionals.
             </p>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm text-gray-700">
               <li className="flex gap-2">
                 <CheckCircle className="text-green-600" size={18} />
                 Access to industry-ready talent
@@ -130,7 +126,7 @@ const Membership = (): JSX.Element => {
       {/* Membership Process */}
       <section className="bg-white border-t">
         <div className="max-w-7xl mx-auto px-6 py-16">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
             Membership Process
           </h2>
 
@@ -143,17 +139,17 @@ const Membership = (): JSX.Element => {
             ].map((step: string, index: number) => (
               <div
                 key={index}
-                className="bg-gray-50 border rounded-lg p-6"
+                className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm"
               >
                 <FileText className="mx-auto text-blue-600 mb-4" size={32} />
-                <p className="font-medium">{step}</p>
+                <p className="font-medium text-gray-900">{step}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-6 py-16 text-center">
           <h2 className="text-3xl font-bold">
