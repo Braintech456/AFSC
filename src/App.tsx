@@ -22,6 +22,7 @@ export default function App(): JSX.Element {
         <Route path="/certifications" element={<CertificationsPage />} />
         <Route path="/authorized-centers" element={<AuthorizedCentersPage />} />
         <Route path="/membership" element={<Membership />} /> {/* ✅ NEW */}
+        <Route path="/certifications/:slug" element={<CourseDetails />} />
         <Route path="/verify" element={<VerifyPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
