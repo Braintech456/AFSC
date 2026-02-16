@@ -104,9 +104,6 @@ export default function ContactPage() {
             method="POST"
             className="space-y-6"
           >
-            {/* Optional redirect */}
-            {/* <input type="hidden" name="_redirect" value="https://afsc.in/thank-you" /> */}
-
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -133,6 +130,19 @@ export default function ContactPage() {
                   placeholder="your.email@example.com"
                 />
               </div>
+            </div>
+
+            {/* NEW PHONE FIELD */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                placeholder="+91 XXXXX XXXXX"
+              />
             </div>
 
             <div>
