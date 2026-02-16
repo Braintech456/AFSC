@@ -1,4 +1,5 @@
 import { CheckCircle, Users, GraduationCap, Building2, FileText } from "lucide-react";
+import AffiliationStrip from '../components/AffiliationStrip';
 
 const Membership = (): JSX.Element => {
   return (
