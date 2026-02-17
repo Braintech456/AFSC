@@ -12,7 +12,7 @@ export default function Hero(): JSX.Element {
           {/* Left content */}
           <div>
             <div className="text-sm font-semibold text-blue-100 mb-3 uppercase tracking-wide">
-              Skill India Mission
+              Supporting Skill India Mission
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
