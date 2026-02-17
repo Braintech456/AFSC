@@ -2,7 +2,7 @@ import { useState } from "react";
 import Award from "lucide-react/dist/esm/icons/award";
 import Building2 from "lucide-react/dist/esm/icons/building-2";
 
-const SCRIPT_URL = "https://docs.google.com/spreadsheets/d/132DgEY0PTkIAmKFJ1DUwhaOHk-pjhWzTfBAK1zShKYg/edit?usp=sharing";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyam8u7hrA3AqRZqLXGd1qiQFzt1VHMmlaJg2lpAFQ8drf79FR1tpoEoeYcfz3jVpLQ/exec";
 
 export default function Verify() {
   // Candidate states
