@@ -21,8 +21,7 @@ export default function Hero(): JSX.Element {
 
             <p className="text-lg text-blue-50 leading-relaxed max-w-xl">
               AFSC is the national skill certification authority for accounting
-              and finance professionals in India, operating under the Skill India
-              Mission with standardized, government-recognized certification programs.
+              and finance professionals in India, operating under the Assessment Agency approved by DGT, NCVET & MSDE(Govt of India) with standardized, government-recognized certification programs.
             </p>
           </div>
 
