@@ -29,7 +29,7 @@ export default function Footer() {
                   Accounting & Finance Skill Council
                 </h3>
                 <p className="text-sm text-slate-400">
-                  Under Skill India Mission
+                  Supporting Skill India Mission
                 </p>
               </div>
             </div>
