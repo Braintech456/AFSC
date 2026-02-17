@@ -2,7 +2,8 @@ import { useState } from "react";
 import Award from "lucide-react/dist/esm/icons/award";
 import Building2 from "lucide-react/dist/esm/icons/building-2";
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxqb-cPdq7skBVjOHpc7rsgekMlV8hSbvG571HwyGp6G9e4XhAnfFrJrPIc4NPC1lye/exec";
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbxqb-cPdq7skBVjOHpc7rsgekMlV8hSbvG571HwyGp6G9e4XhAnfFrJrPIc4NPC1lye/exec";
 
 export default function Verify() {
   // Candidate states
@@ -17,23 +18,19 @@ export default function Verify() {
   const [centerResult, setCenterResult] = useState<any>(null);
   const [centerError, setCenterError] = useState("");
 
-  // Certificate verification
+  // ================= CERTIFICATE VERIFICATION (GET) =================
   const verifyCertificate = async (e: React.FormEvent) => {
     e.preventDefault();
     setCertResult(null);
     setCertError("");
 
-    try {
-      const res = await fetch(SCRIPT_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          type: "certificate",
-          certificateId: certId.trim(),
-          email: candidateEmail.trim().toLowerCase(),
-        }),
-      });
+    const url =
+      `${SCRIPT_URL}?type=certificate` +
+      `&certId=${encodeURIComponent(certId.trim())}` +
+      `&email=${encodeURIComponent(candidateEmail.trim().toLowerCase())}`;
 
+    try {
+      const res = await fetch(url);
       const data = await res.json();
 
       if (!data.verified) {
@@ -46,22 +43,18 @@ export default function Verify() {
     }
   };
 
-  // Institute verification
+  // ================= INSTITUTE VERIFICATION (GET) =================
   const verifyCenter = async (e: React.FormEvent) => {
     e.preventDefault();
     setCenterResult(null);
     setCenterError("");
 
-    try {
-      const res = await fetch(SCRIPT_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          type: "center",
-          email: centerEmail.trim().toLowerCase(),
-        }),
-      });
+    const url =
+      `${SCRIPT_URL}?type=center` +
+      `&email=${encodeURIComponent(centerEmail.trim().toLowerCase())}`;
 
+    try {
+      const res = await fetch(url);
       const data = await res.json();
 
       if (!data.verified) {
@@ -193,8 +186,8 @@ export default function Verify() {
               <div className="mt-6 bg-green-50 border border-green-200 rounded-lg p-4 text-sm">
                 <p><b>Status:</b> Authorized</p>
                 <p><b>ATC No:</b> {centerResult.atc}</p>
-                <p><b>Institute:</b> {centerResult.instituteName}</p>
-                <p><b>Valid Till:</b> {centerResult.validTill}</p>
+                <p><b>Institute:</b> {centerResult.name}</p>
+                <p><b>Valid Till:</b> {centerResult.valid}</p>
                 <p><b>District:</b> {centerResult.district}</p>
               </div>
             )}
