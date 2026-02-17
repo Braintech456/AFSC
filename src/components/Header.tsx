@@ -28,7 +28,7 @@ export default function Header(): JSX.Element {
                 ACCOUNTING & FINANCE SKILL COUNCIL
               </h1>
               <p className="text-xs text-gray-600">
-                Skill India Mission
+                Supporting Skill India Mission
               </p>
             </div>
           </Link>
