@@ -6,14 +6,14 @@ const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbxqb-cPdq7skBVjOHpc7rsgekMlV8hSbvG571HwyGp6G9e4XhAnfFrJrPIc4NPC1lye/exec";
 
 export default function Verify() {
-  // Candidate states
+  // ================= CERTIFICATE STATES =================
   const [certId, setCertId] = useState("");
   const [candidateEmail, setCandidateEmail] = useState("");
   const [certResult, setCertResult] = useState<any>(null);
   const [certError, setCertError] = useState("");
   const [certLoading, setCertLoading] = useState(false);
 
-  // Institute states
+  // ================= CENTER STATES =================
   const [centerName, setCenterName] = useState("");
   const [centerEmail, setCenterEmail] = useState("");
   const [centerResult, setCenterResult] = useState<any>(null);
