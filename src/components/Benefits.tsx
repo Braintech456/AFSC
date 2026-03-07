@@ -14,7 +14,7 @@ const benefits = [
     icon: Award,
     title: 'Government-Recognized Certification',
     description:
-      'Receive certifications recognized by NCVET, MSDE, and Skill India — valid across India and accepted by employers nationwide.',
+      'Receive certifications from Assessment Agency recognized by NCVET, MSDE, and Skill India — valid across India and accepted by employers nationwide.',
   },
   {
     icon: Briefcase,
