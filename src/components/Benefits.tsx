@@ -72,7 +72,7 @@ export default function Benefits(): JSX.Element {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            AFSC certifications are government-recognized, standardized, and trusted across India’s
+            AFSC certifications are industry-recognized, standardized, and trusted across India’s
             accounting and finance sector.
           </p>
         </div>
