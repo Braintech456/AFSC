@@ -38,7 +38,7 @@ export default function ContactPage() {
                   <p className="font-semibold text-gray-900">Office Locations</p>
                   <p className="text-gray-700">
                     Head Office: Kaushal, 1st Floor, Near Gauri Shankar Mandir, Sector 9A, Gurugram - 122001<br />
-                    Regional Office: 3rd Floor, Indira Heights, Old Gangapur Naka, Gangapur Road, Nashik - 422005
+                    Regional Office: 13, Alok, New Pandit Colony, Gangapur Road, Nashik - 422002
                   </p>
                 </div>
               </div>
