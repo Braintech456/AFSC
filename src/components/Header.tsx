@@ -35,6 +35,12 @@ export default function Header(): JSX.Element {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
+            <Link
+  to="/commerce-olympiad"
+  className={`${isActive('/commerce-olympiad')} hover:text-blue-700`}
+>
+  Commerce Olympiad
+</Link>
             <Link to="/" className={`${isActive('/')} hover:text-blue-700`}>
               Home
             </Link>
@@ -99,6 +105,14 @@ export default function Header(): JSX.Element {
               >
                 Home
               </Link>
+              <Link
+  to="/commerce-olympiad"
+  className={isActive('/commerce-olympiad')}
+  onClick={() => setIsMenuOpen(false)}
+>
+  Commerce Olympiad
+</Link>
+              
               <Link
                 to="/certifications"
                 className={isActive('/certifications')}
