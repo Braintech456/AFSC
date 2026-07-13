@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
+import { ArrowDown } from "lucide-react";
 
 export default function CommerceOlympiad() {
 
@@ -73,15 +74,19 @@ export default function CommerceOlympiad() {
 
               <div className="flex flex-wrap gap-4 mt-10">
 
-                <button className="bg-white text-blue-700 px-7 py-3 rounded-lg font-semibold flex items-center gap-2 hover:shadow-xl transition">
-                  Register Now
-                  <ArrowRight size={18} />
-                </button>
+                <button
+  onClick={() =>
+    document
+      .getElementById("about-olympiad")
+      ?.scrollIntoView({ behavior: "smooth" })
+  }
+  className="bg-white text-blue-700 px-7 py-3 rounded-lg font-semibold flex items-center gap-2 hover:shadow-xl transition"
+>
+  Learn More
+  <ArrowDown size={18} />
+</button>
 
-                <button className="border border-white px-7 py-3 rounded-lg font-semibold flex items-center gap-2 hover:bg-white hover:text-blue-700 transition">
-                  <Download size={18} />
-                  Download Brochure
-                </button>
+                
 
               </div>
 
@@ -157,7 +162,7 @@ export default function CommerceOlympiad() {
 
 {/* ================= ABOUT OLYMPIAD ================= */}
 
-<section className="py-20 bg-white">
+<section id="about-olympiad" className="py-20 bg-white">
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center mb-14">
