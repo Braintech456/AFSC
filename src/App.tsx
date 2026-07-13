@@ -1,3 +1,4 @@
+import CommerceOlympiad from './pages/CommerceOlympiad';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -23,6 +24,7 @@ export default function App(): JSX.Element {
 
         {/* Certifications Listing */}
         <Route path="/certifications" element={<CertificationsPage />} />
+        <Route path="/commerce-olympiad" element={<CommerceOlympiad />} />
 
         {/* Certification Details (Dynamic) */}
         <Route path="/certifications/:slug" element={<CourseDetails />} />
