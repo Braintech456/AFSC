@@ -12,19 +12,19 @@ export default function Header(): JSX.Element {
       : 'text-gray-700';
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-lg shadow-gray-100/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
               src="https://i.ibb.co/BV54hDTb/afsc-logo.png"
               alt="AFSC Logo"
-              className="h-12 w-auto"
+              className="h-14 w-auto"
             />
             <div className="hidden sm:block">
-<h1 className="text-base lg:text-lg font-bold text-gray-900 leading-tight">
+<h1 className="text-lg lg:text-xl font-extrabold tracking-tight text-gray-900 leading-tight">
   ACCOUNTING & FINANCE SKILL COUNCIL
               </h1>
               <p className="text-[11px] text-gray-500">
@@ -34,7 +34,7 @@ export default function Header(): JSX.Element {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-8 xl:space-x-10">
             <Link to="/" className={`${isActive('/')} hover:text-blue-700`}>
   Home
 </Link>
