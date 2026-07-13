@@ -17,33 +17,34 @@ export default function Header(): JSX.Element {
         <div className="flex justify-between items-center h-16">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2">
             <img
               src="https://i.ibb.co/BV54hDTb/afsc-logo.png"
               alt="AFSC Logo"
               className="h-12 w-auto"
             />
             <div className="hidden sm:block">
-              <h1 className="text-lg font-bold text-gray-900">
-                ACCOUNTING & FINANCE SKILL COUNCIL
+<h1 className="text-base lg:text-lg font-bold text-gray-900 leading-tight">
+  ACCOUNTING & FINANCE SKILL COUNCIL
               </h1>
-              <p className="text-xs text-gray-600">
+              <p className="text-[11px] text-gray-500">
                 Supporting Skill India Mission
               </p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <Link
+          <nav className="hidden lg:flex items-center space-x-6">
+            <Link to="/" className={`${isActive('/')} hover:text-blue-700`}>
+  Home
+</Link>
+
+<Link
   to="/commerce-olympiad"
   className={`${isActive('/commerce-olympiad')} hover:text-blue-700`}
 >
-  Commerce Olympiad
+  Olympiad
 </Link>
-            <Link to="/" className={`${isActive('/')} hover:text-blue-700`}>
-              Home
-            </Link>
             <Link
               to="/certifications"
               className={`${isActive('/certifications')} hover:text-blue-700`}
@@ -79,7 +80,7 @@ export default function Header(): JSX.Element {
           {/* Verify Button */}
           <div className="hidden md:block">
             <Link to="/verify">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition-colors">
                 Verify
               </button>
             </Link>
