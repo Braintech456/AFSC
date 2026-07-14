@@ -690,7 +690,7 @@ by AFSC for the respective Olympiad edition.
         </span>
 
         <span className="text-blue-600 font-medium">
-          To Be Announced
+          1st July, 2026
         </span>
       </div>
 
@@ -700,7 +700,7 @@ by AFSC for the respective Olympiad edition.
         </span>
 
         <span className="text-blue-600 font-medium">
-          To Be Announced
+          31st August, 2026
         </span>
       </div>
 
@@ -710,7 +710,7 @@ by AFSC for the respective Olympiad edition.
         </span>
 
         <span className="text-blue-600 font-medium">
-          To Be Announced
+          To be decided by college
         </span>
       </div>
 
@@ -720,7 +720,7 @@ by AFSC for the respective Olympiad edition.
         </span>
 
         <span className="text-blue-600 font-medium">
-          To Be Announced
+          15th Jan, 2027
         </span>
       </div>
 
@@ -730,7 +730,7 @@ by AFSC for the respective Olympiad edition.
         </span>
 
         <span className="text-blue-600 font-medium">
-          To Be Announced
+          15th Feb, 2027
         </span>
       </div>
 
