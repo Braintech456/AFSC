@@ -286,7 +286,7 @@ export default function CommerceOlympiad() {
       {/* Card 2 */}
       <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
         <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
-          <BadgeCheck className="w-7 h-7 text-blue-600" />
+          <FileCheck className="w-7 h-7 text-blue-600" />
         </div>
 
         <h3 className="text-xl font-semibold mb-3">
@@ -317,7 +317,7 @@ export default function CommerceOlympiad() {
       {/* Card 4 */}
       <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
         <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
-          <BookOpen className="w-7 h-7 text-blue-600" />
+          <GraduationCap className="w-7 h-7 text-blue-600" />
         </div>
 
         <h3 className="text-xl font-semibold mb-3">
@@ -349,7 +349,7 @@ export default function CommerceOlympiad() {
       {/* Card 6 */}
       <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
         <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
-          <Rocket className="w-7 h-7 text-blue-600" />
+          <TrendingUp className="w-7 h-7 text-blue-600" />
         </div>
 
         <h3 className="text-xl font-semibold mb-3">
