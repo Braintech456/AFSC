@@ -9,6 +9,7 @@ import {
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import { ArrowDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function CommerceOlympiad() {
 
@@ -41,6 +42,8 @@ export default function CommerceOlympiad() {
         "Results will be announced on the official AFSC website and communicated through registered schools wherever applicable.",
     },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -806,11 +809,17 @@ by AFSC for the respective Olympiad edition.
 
     <div className="mt-10 flex flex-wrap justify-center gap-5">
 
-      <button className="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+      <button
+        onClick={() => navigate("/contact")}
+        className="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+      >
         Register Now
       </button>
 
-      <button className="border border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition">
+      <button
+        onClick={() => navigate("/contact")}
+        className="border border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition"
+      >
         Contact Us
       </button>
 
@@ -818,7 +827,6 @@ by AFSC for the respective Olympiad edition.
 
   </div>
 </section>
-
       </>
   );
 }
