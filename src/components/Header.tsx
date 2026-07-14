@@ -17,7 +17,7 @@ export default function Header(): JSX.Element {
         <div className="flex justify-between items-center h-20">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-3 min-w-[330px]">
             <img
               src="https://i.ibb.co/BV54hDTb/afsc-logo.png"
               alt="AFSC Logo"
