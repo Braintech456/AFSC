@@ -25,8 +25,10 @@ export default function Header(): JSX.Element {
             />
             <div className="hidden sm:block">
 <h1 className="text-lg lg:text-xl font-extrabold tracking-tight text-gray-900 leading-tight">
-  ACCOUNTING & FINANCE SKILL COUNCIL
-              </h1>
+  ACCOUNTING & FINANCE
+  <br />
+  SKILL COUNCIL
+</h1>
               <p className="text-[11px] text-gray-500">
                 Supporting Skill India Mission
               </p>
@@ -78,7 +80,7 @@ export default function Header(): JSX.Element {
           </nav>
 
           {/* Verify Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:block ml-6">
             <Link to="/verify">
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition-colors">
                 Verify
