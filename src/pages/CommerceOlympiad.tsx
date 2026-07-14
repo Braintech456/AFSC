@@ -5,6 +5,9 @@ import {
   Award,
   ShieldCheck,
   FileCheck,
+  GraduationCap,
+  Brain,
+  TrendingUp,
 } from "lucide-react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
@@ -264,9 +267,10 @@ export default function CommerceOlympiad() {
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
-          
+      {/* Card 1 */}
+      <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+          <Trophy className="w-7 h-7 text-blue-600" />
         </div>
 
         <h3 className="text-xl font-semibold mb-3">
@@ -279,9 +283,10 @@ export default function CommerceOlympiad() {
         </p>
       </div>
 
-      <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
-          
+      {/* Card 2 */}
+      <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+          <BadgeCheck className="w-7 h-7 text-blue-600" />
         </div>
 
         <h3 className="text-xl font-semibold mb-3">
@@ -293,9 +298,10 @@ export default function CommerceOlympiad() {
         </p>
       </div>
 
-      <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
-          
+      {/* Card 3 */}
+      <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+          <Award className="w-7 h-7 text-blue-600" />
         </div>
 
         <h3 className="text-xl font-semibold mb-3">
@@ -303,13 +309,15 @@ export default function CommerceOlympiad() {
         </h3>
 
         <p className="text-gray-600 leading-7">
-          Outstanding performers receive medals, certificates and national recognition.
+          Outstanding performers receive medals, certificates and national
+          recognition.
         </p>
       </div>
 
-      <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
-          
+      {/* Card 4 */}
+      <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+          <BookOpen className="w-7 h-7 text-blue-600" />
         </div>
 
         <h3 className="text-xl font-semibold mb-3">
@@ -322,9 +330,10 @@ export default function CommerceOlympiad() {
         </p>
       </div>
 
-      <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
-          
+      {/* Card 5 */}
+      <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+          <Brain className="w-7 h-7 text-blue-600" />
         </div>
 
         <h3 className="text-xl font-semibold mb-3">
@@ -337,9 +346,10 @@ export default function CommerceOlympiad() {
         </p>
       </div>
 
-      <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
-        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
-          
+      {/* Card 6 */}
+      <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+          <Rocket className="w-7 h-7 text-blue-600" />
         </div>
 
         <h3 className="text-xl font-semibold mb-3">
